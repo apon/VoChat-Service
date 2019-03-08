@@ -1,3 +1,11 @@
 2019-03-08 14:47:35 pid:28343 Workerman[startdev.php] start in DEBUG mode
 2019-03-08 15:30:51 pid:28343 Workerman[startdev.php] stopping ...
 2019-03-08 15:30:51 pid:28343 Workerman[startdev.php] has been stopped
+2019-03-08 15:55:49 pid:31295 Workerman[startdev.php] start in DEBUG mode
+2019-03-08 15:55:55 pid:31295 Workerman[startdev.php] stopping ...
+2019-03-08 15:55:55 pid:31295 Workerman[startdev.php] has been stopped
+2019-03-08 15:56:05 pid:31308 Workerman[startdev.php] start in DEBUG mode
+2019-03-08 15:56:32 pid:31325 Workerman[start.php] start in DEBUG mode
+2019-03-08 15:57:39 pid:31308 Workerman[startdev.php] stopping ...
+2019-03-08 15:57:39 pid:31308 Workerman[startdev.php] has been stopped
+2019-03-08 15:57:46 pid:31342 Workerman[start.php] start in DEBUG mode
