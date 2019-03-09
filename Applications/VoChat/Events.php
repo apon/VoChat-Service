@@ -20,7 +20,7 @@
 //declare(ticks=1);
 
 use \GatewayWorker\Lib\Gateway;
-require './model/Entity.php'
+require './model/Entity.php';
 
 /**
  * 主逻辑
