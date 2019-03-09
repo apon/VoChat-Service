@@ -53,7 +53,10 @@ class Events
     * @param mixed $message 具体消息
     */
    public static function onMessage($client_id, $message)
-   {    $action = json_decode($message,false);
+   {    
+        var_dump($message);
+        $action = json_decode($message,false);
+        var_dump($action);
         $msg = $action[msg];
         $action->msg = "$client_id said $msg";
 
