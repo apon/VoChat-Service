@@ -58,7 +58,7 @@ class Events
         $action = json_decode($message,true);
         var_dump($action);
         $msg = $action["msg"];
-        $action->msg = "$client_id said $msg";
+        $action["msg"] = "$client_id said $msg";
 
         // 向所有人发送 
         Gateway::sendToAll(json_encode($action));
