@@ -55,7 +55,7 @@ class Events
    public static function onMessage($client_id, $message)
    {    
         var_dump($message);
-        $action = json_decode($message,false);
+        $action = json_decode($message,true);
         var_dump($action);
         $msg = $action[msg];
         $action->msg = "$client_id said $msg";
