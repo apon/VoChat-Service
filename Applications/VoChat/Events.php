@@ -57,7 +57,7 @@ class Events
         var_dump($message);
         $action = json_decode($message,true);
         var_dump($action);
-        $msg = $action[msg];
+        $msg = $action["msg"];
         $action->msg = "$client_id said $msg";
 
         // 向所有人发送 
