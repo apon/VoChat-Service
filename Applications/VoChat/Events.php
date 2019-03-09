@@ -20,6 +20,7 @@
 //declare(ticks=1);
 
 use \GatewayWorker\Lib\Gateway;
+require './model/Entity.php'
 
 /**
  * 主逻辑
@@ -36,10 +37,14 @@ class Events
      */
     public static function onConnect($client_id)
     {
+        $action = new Action();
+        $action->id = 0;
+        $action->cmd = 0;
+        $action->msg = "Hello $client_id"
         // 向当前client_id发送数据 
-        Gateway::sendToClient($client_id, "Hello $client_id\r\n");
+        Gateway::sendToClient($client_id, json_encode($action));
         // 向所有人发送
-        Gateway::sendToAll("$client_id login\r\n");
+        Gateway::sendToAll(json_encode($action));
     }
     
    /**
@@ -48,9 +53,12 @@ class Events
     * @param mixed $message 具体消息
     */
    public static function onMessage($client_id, $message)
-   {
+   {    $action = json_decode($message,false);
+        $msg = $action[msg]
+        $action->msg = "$client_id said $msg"
+
         // 向所有人发送 
-        Gateway::sendToAll("$client_id said $message\r\n");
+        Gateway::sendToAll(json_encode($action));
    }
    
    /**
@@ -58,8 +66,11 @@ class Events
     * @param int $client_id 连接id
     */
    public static function onClose($client_id)
-   {
+   {    $action = new Action();
+        $action->id = 0;
+        $action->cmd = 0;
+        $action->msg = "$client_id logout"
        // 向所有人发送 
-       GateWay::sendToAll("$client_id logout\r\n");
+       GateWay::sendToAll(json_encode($action));
    }
 }
