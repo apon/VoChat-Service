@@ -20,7 +20,7 @@
 //declare(ticks=1);
 
 use \GatewayWorker\Lib\Gateway;
-require './model/Entity.php';
+require dirname(__FILE__).'/model/Entity.php';
 
 /**
  * 主逻辑
@@ -40,7 +40,7 @@ class Events
         $action = new Action();
         $action->id = 0;
         $action->cmd = 0;
-        $action->msg = "Hello $client_id"
+        $action->msg = "Hello $client_id";
         // 向当前client_id发送数据 
         Gateway::sendToClient($client_id, json_encode($action));
         // 向所有人发送
@@ -54,8 +54,8 @@ class Events
     */
    public static function onMessage($client_id, $message)
    {    $action = json_decode($message,false);
-        $msg = $action[msg]
-        $action->msg = "$client_id said $msg"
+        $msg = $action[msg];
+        $action->msg = "$client_id said $msg";
 
         // 向所有人发送 
         Gateway::sendToAll(json_encode($action));
@@ -69,7 +69,7 @@ class Events
    {    $action = new Action();
         $action->id = 0;
         $action->cmd = 0;
-        $action->msg = "$client_id logout"
+        $action->msg = "$client_id logout";
        // 向所有人发送 
        GateWay::sendToAll(json_encode($action));
    }
