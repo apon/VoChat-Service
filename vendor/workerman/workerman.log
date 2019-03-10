@@ -2692,3 +2692,6 @@ Stack trace:
 2019-03-10 22:36:52 pid:74668 Workerman[start.php] start in DEBUG mode
 2019-03-10 22:36:54 pid:74668 Workerman[start.php] stopping ...
 2019-03-10 22:36:54 pid:74668 Workerman[start.php] has been stopped
+2019-03-10 22:40:52 pid:75404 Workerman[start.php] start in DEBUG mode
+2019-03-10 22:40:56 pid:75404 Workerman[start.php] stopping ...
+2019-03-10 22:40:56 pid:75404 Workerman[start.php] has been stopped

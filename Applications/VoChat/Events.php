@@ -88,7 +88,7 @@ class Events
    }
 
 
-   private function handleLogin($client_id,$action){
+   private static function handleLogin($client_id,$action){
        $name = $action['name'];
        $pass = $action['pass'];
        $res['id'] = $action['id'];
