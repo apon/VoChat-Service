@@ -20,7 +20,7 @@
 //declare(ticks=1);
 
 use \GatewayWorker\Lib\Gateway;
-require dirname(__FILE__).'/model/Entity.php';
+use \VoChat\Model\ActionType;
 
 /**
  * 主逻辑
@@ -32,48 +32,74 @@ class Events
     /**
      * 当客户端连接时触发
      * 如果业务不需此回调可以删除onConnect
-     * 
+     *
      * @param int $client_id 连接id
+     * @throws Exception
      */
     public static function onConnect($client_id)
     {
-        $action = new Action();
-        $action->id = 0;
-        $action->cmd = 0;
-        $action->msg = "Hello $client_id";
+        $action['id'] = 0;
+        $action['cmd'] = 0;
+        $action['msg'] = "welcome to VoChat";
         // 向当前client_id发送数据 
         Gateway::sendToClient($client_id, json_encode($action));
-        // 向所有人发送
-        Gateway::sendToAll(json_encode($action));
+
     }
-    
-   /**
-    * 当客户端发来消息时触发
-    * @param int $client_id 连接id
-    * @param mixed $message 具体消息
-    */
+
+    /**
+     * 当客户端发来消息时触发
+     * @param int $client_id 连接id
+     * @param mixed $message 具体消息
+     * @throws Exception
+     */
    public static function onMessage($client_id, $message)
-   {    
-        var_dump($message);
-        $action = json_decode($message,true);
-        var_dump($action);
-        $msg = $action["msg"];
-        $action["msg"] = "$client_id said $msg";
+   {
+       $action = json_decode($message,true);
+       if (isset($action['cmd'])){
+           switch ($action['cmd']){
+               case ActionType::LOGIN:
+                   self::handleLogin($client_id,$action);
+                   break;
+               case 2:
+                   break;
+               case 3:
+                   break;
+               default:
+           }
+       }
 
         // 向所有人发送 
-        Gateway::sendToAll(json_encode($action));
+//        Gateway::sendToAll(json_encode($action));
    }
-   
-   /**
-    * 当用户断开连接时触发
-    * @param int $client_id 连接id
-    */
+
+    /**
+     * 当用户断开连接时触发
+     * @param int $client_id 连接id
+     * @throws Exception
+     */
    public static function onClose($client_id)
-   {    $action = new Action();
-        $action->id = 0;
-        $action->cmd = 0;
-        $action->msg = "$client_id logout";
+   {
+//        $action['id'] = 0;
+//        $action['cmd'] = 0;
+//        $action['msg'] = "$client_id logout";
        // 向所有人发送 
-       GateWay::sendToAll(json_encode($action));
+//       GateWay::sendToAll(json_encode($action));
+   }
+
+
+   private function handleLogin($client_id,$action){
+       $name = $action['name'];
+       $pass = $action['pass'];
+       $res['id'] = $action['id'];
+       $res['cmd'] = $action['cmd'];
+       if ($name=="yaopeng"&&$pass=="123456"){
+           $res['status'] = 0;
+           $res['msg'] = 'login success!';
+       }else{
+           $res['status'] = 1;
+           $res['msg'] = 'login error';
+       }
+
+       Gateway::sendToClient($client_id, json_encode($res));
    }
 }
