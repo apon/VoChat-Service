@@ -18,7 +18,7 @@
  * 然后观察一段时间workerman.log看是否有process_timeout异常
  */
 //declare(ticks=1);
-require __DIR__.'model/ActionType.php';
+require __DIR__.'/model/ActionType.php';
 
 use \GatewayWorker\Lib\Gateway;
 use \VoChat\Model\ActionType;

@@ -2164,3 +2164,531 @@ Stack trace:
 2019-03-10 22:22:04 pid:71758 Workerman[start.php] start in DEBUG mode
 2019-03-10 22:22:11 pid:71758 Workerman[start.php] stopping ...
 2019-03-10 22:22:11 pid:71758 Workerman[start.php] has been stopped
+2019-03-10 22:36:12 pid:74363 Workerman[start.php] start in DEBUG mode
+2019-03-10 22:36:12 pid:74365 Worker[74365] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74366 Worker[74366] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74364 Worker[74364] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74367 Worker[74367] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74365] exit with status 65280
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74366] exit with status 65280
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74367] exit with status 65280
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74364] exit with status 65280
+2019-03-10 22:36:12 pid:74373 Worker[74373] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74374 Worker[74374] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74376 Worker[74376] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74375 Worker[74375] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74373] exit with status 65280
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74374] exit with status 65280
+2019-03-10 22:36:12 pid:74377 Worker[74377] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74376] exit with status 65280
+2019-03-10 22:36:12 pid:74378 Worker[74378] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74375] exit with status 65280
+2019-03-10 22:36:12 pid:74379 Worker[74379] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74377] exit with status 65280
+2019-03-10 22:36:12 pid:74380 Worker[74380] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74378] exit with status 65280
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74379] exit with status 65280
+2019-03-10 22:36:12 pid:74381 Worker[74381] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74382 Worker[74382] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74383 Worker[74383] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74380] exit with status 65280
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74381] exit with status 65280
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74382] exit with status 65280
+2019-03-10 22:36:12 pid:74384 Worker[74384] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74385 Worker[74385] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74383] exit with status 65280
+2019-03-10 22:36:12 pid:74386 Worker[74386] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74387 Worker[74387] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74385] exit with status 65280
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74384] exit with status 65280
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74386] exit with status 65280
+2019-03-10 22:36:12 pid:74388 Worker[74388] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74389 Worker[74389] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74390 Worker[74390] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74390] exit with status 65280
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74389] exit with status 65280
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74388] exit with status 65280
+2019-03-10 22:36:12 pid:74391 Worker[74391] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74392 Worker[74392] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74393 Worker[74393] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74387] exit with status 65280
+2019-03-10 22:36:12 pid:74394 Worker[74394] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74393] exit with status 65280
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74392] exit with status 65280
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74391] exit with status 65280
+2019-03-10 22:36:12 pid:74363 worker[VoChatBusinessWorker:74394] exit with status 65280
+2019-03-10 22:36:12 pid:74396 Worker[74396] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74395 Worker[74395] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74397 Worker[74397] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:12 pid:74398 Worker[74398] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74398] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74397] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74396] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74395] exit with status 65280
+2019-03-10 22:36:13 pid:74399 Worker[74399] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74401 Worker[74401] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74400 Worker[74400] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74402 Worker[74402] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74402] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74401] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74400] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74399] exit with status 65280
+2019-03-10 22:36:13 pid:74403 Worker[74403] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74405 Worker[74405] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74404 Worker[74404] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74406 Worker[74406] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74406] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74405] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74404] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74403] exit with status 65280
+2019-03-10 22:36:13 pid:74407 Worker[74407] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74409 Worker[74409] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74408 Worker[74408] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74410 Worker[74410] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74410] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74409] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74408] exit with status 65280
+2019-03-10 22:36:13 pid:74412 Worker[74412] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74411 Worker[74411] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74413 Worker[74413] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74407] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74412] exit with status 65280
+2019-03-10 22:36:13 pid:74414 Worker[74414] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74413] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74411] exit with status 65280
+2019-03-10 22:36:13 pid:74415 Worker[74415] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74417 Worker[74417] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74416 Worker[74416] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74414] exit with status 65280
+2019-03-10 22:36:13 pid:74418 Worker[74418] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74417] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74416] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74415] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74418] exit with status 65280
+2019-03-10 22:36:13 pid:74419 Worker[74419] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74420 Worker[74420] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74421 Worker[74421] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74422 Worker[74422] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74420] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74419] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74421] exit with status 65280
+2019-03-10 22:36:13 pid:74423 Worker[74423] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74424 Worker[74424] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74425 Worker[74425] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74422] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74423] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74425] exit with status 65280
+2019-03-10 22:36:13 pid:74426 Worker[74426] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74424] exit with status 65280
+2019-03-10 22:36:13 pid:74427 Worker[74427] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74428 Worker[74428] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74429 Worker[74429] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74426] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74427] exit with status 65280
+2019-03-10 22:36:13 pid:74430 Worker[74430] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74429] exit with status 65280
+2019-03-10 22:36:13 pid:74431 Worker[74431] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74428] exit with status 65280
+2019-03-10 22:36:13 pid:74432 Worker[74432] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74430] exit with status 65280
+2019-03-10 22:36:13 pid:74433 Worker[74433] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74434 Worker[74434] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74432] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74431] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74433] exit with status 65280
+2019-03-10 22:36:13 pid:74435 Worker[74435] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74436 Worker[74436] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74437 Worker[74437] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74434] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74436] exit with status 65280
+2019-03-10 22:36:13 pid:74438 Worker[74438] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74435] exit with status 65280
+2019-03-10 22:36:13 pid:74439 Worker[74439] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74437] exit with status 65280
+2019-03-10 22:36:13 pid:74440 Worker[74440] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74439] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74438] exit with status 65280
+2019-03-10 22:36:13 pid:74441 Worker[74441] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74442 Worker[74442] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74443 Worker[74443] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74440] exit with status 65280
+2019-03-10 22:36:13 pid:74444 Worker[74444] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74444] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74443] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74442] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74441] exit with status 65280
+2019-03-10 22:36:13 pid:74446 Worker[74446] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74447 Worker[74447] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74445 Worker[74445] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74448 Worker[74448] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74447] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74446] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74445] exit with status 65280
+2019-03-10 22:36:13 pid:74449 Worker[74449] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74450 Worker[74450] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74451 Worker[74451] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74448] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74450] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74451] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74449] exit with status 65280
+2019-03-10 22:36:13 pid:74452 Worker[74452] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74453 Worker[74453] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74454 Worker[74454] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74455 Worker[74455] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74454] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74455] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74453] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74452] exit with status 65280
+2019-03-10 22:36:13 pid:74456 Worker[74456] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74457 Worker[74457] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74458 Worker[74458] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74459 Worker[74459] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74459] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74458] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74457] exit with status 65280
+2019-03-10 22:36:13 pid:74460 Worker[74460] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74462 Worker[74462] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74461 Worker[74461] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74456] exit with status 65280
+2019-03-10 22:36:13 pid:74463 Worker[74463] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74462] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74461] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74460] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74463] exit with status 65280
+2019-03-10 22:36:13 pid:74465 Worker[74465] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74464 Worker[74464] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74466 Worker[74466] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74467 Worker[74467] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74467] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74466] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74465] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74464] exit with status 65280
+2019-03-10 22:36:13 pid:74468 Worker[74468] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74469 Worker[74469] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74470 Worker[74470] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74471 Worker[74471] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74471] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74468] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74470] exit with status 65280
+2019-03-10 22:36:13 pid:74472 Worker[74472] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74473 Worker[74473] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74469] exit with status 65280
+2019-03-10 22:36:13 pid:74474 Worker[74474] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74475 Worker[74475] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74474] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74473] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74472] exit with status 65280
+2019-03-10 22:36:13 pid:74476 Worker[74476] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74478 Worker[74478] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74477 Worker[74477] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74475] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74476] exit with status 65280
+2019-03-10 22:36:13 pid:74479 Worker[74479] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74478] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74477] exit with status 65280
+2019-03-10 22:36:13 pid:74480 Worker[74480] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74481 Worker[74481] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74482 Worker[74482] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74479] exit with status 65280
+2019-03-10 22:36:13 pid:74483 Worker[74483] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74482] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74481] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74480] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74483] exit with status 65280
+2019-03-10 22:36:13 pid:74484 Worker[74484] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74485 Worker[74485] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74486 Worker[74486] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74487 Worker[74487] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74485] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74486] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74484] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74487] exit with status 65280
+2019-03-10 22:36:13 pid:74488 Worker[74488] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74489 Worker[74489] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74490 Worker[74490] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74491 Worker[74491] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74491] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74490] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74489] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74488] exit with status 65280
+2019-03-10 22:36:13 pid:74493 Worker[74493] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74492 Worker[74492] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74494 Worker[74494] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74495 Worker[74495] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74495] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74494] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74493] exit with status 65280
+2019-03-10 22:36:13 pid:74363 worker[VoChatBusinessWorker:74492] exit with status 65280
+2019-03-10 22:36:14 pid:74496 Worker[74496] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74498 Worker[74498] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74497 Worker[74497] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74499 Worker[74499] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74498] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74497] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74496] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74499] exit with status 65280
+2019-03-10 22:36:14 pid:74500 Worker[74500] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74502 Worker[74502] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74501 Worker[74501] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74503 Worker[74503] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74503] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74502] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74501] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74500] exit with status 65280
+2019-03-10 22:36:14 pid:74504 Worker[74504] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74506 Worker[74506] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74505 Worker[74505] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74507 Worker[74507] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74506] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74507] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74505] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74504] exit with status 65280
+2019-03-10 22:36:14 pid:74508 Worker[74508] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74509 Worker[74509] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74510 Worker[74510] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74511 Worker[74511] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74509] exit with status 65280
+2019-03-10 22:36:14 pid:74512 Worker[74512] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74511] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74510] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74508] exit with status 65280
+2019-03-10 22:36:14 pid:74514 Worker[74514] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74515 Worker[74515] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74513 Worker[74513] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74512] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74514] exit with status 65280
+2019-03-10 22:36:14 pid:74516 Worker[74516] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74515] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74513] exit with status 65280
+2019-03-10 22:36:14 pid:74517 Worker[74517] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74518 Worker[74518] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74519 Worker[74519] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74516] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74519] exit with status 65280
+2019-03-10 22:36:14 pid:74520 Worker[74520] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74518] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74517] exit with status 65280
+2019-03-10 22:36:14 pid:74521 Worker[74521] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74522 Worker[74522] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74523 Worker[74523] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74523] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74522] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74520] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74521] exit with status 65280
+2019-03-10 22:36:14 pid:74524 Worker[74524] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74525 Worker[74525] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74526 Worker[74526] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74527 Worker[74527] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74524] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74527] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74526] exit with status 65280
+2019-03-10 22:36:14 pid:74528 Worker[74528] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74529 Worker[74529] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74525] exit with status 65280
+2019-03-10 22:36:14 pid:74530 Worker[74530] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74528] exit with status 65280
+2019-03-10 22:36:14 pid:74531 Worker[74531] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74530] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74529] exit with status 65280
+2019-03-10 22:36:14 pid:74532 Worker[74532] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74531] exit with status 65280
+2019-03-10 22:36:14 pid:74533 Worker[74533] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74534 Worker[74534] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74535 Worker[74535] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74533] exit with status 65280
+2019-03-10 22:36:14 pid:74536 Worker[74536] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74535] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74534] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74532] exit with status 65280
+2019-03-10 22:36:14 pid:74537 Worker[74537] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74538 Worker[74538] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74539 Worker[74539] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74536] exit with status 65280
+2019-03-10 22:36:14 pid:74540 Worker[74540] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74539] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74538] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74537] exit with status 65280
+2019-03-10 22:36:14 pid:74542 Worker[74542] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74541 Worker[74541] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74543 Worker[74543] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74540] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74543] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74542] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74541] exit with status 65280
+2019-03-10 22:36:14 pid:74545 Worker[74545] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74546 Worker[74546] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74544 Worker[74544] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74547 Worker[74547] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74545] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74546] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74544] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74547] exit with status 65280
+2019-03-10 22:36:14 pid:74548 Worker[74548] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74549 Worker[74549] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74550 Worker[74550] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74551 Worker[74551] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74549] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74551] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74550] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74548] exit with status 65280
+2019-03-10 22:36:14 pid:74552 Worker[74552] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74554 Worker[74554] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74553 Worker[74553] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74555 Worker[74555] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74552] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74554] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74555] exit with status 65280
+2019-03-10 22:36:14 pid:74556 Worker[74556] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74553] exit with status 65280
+2019-03-10 22:36:14 pid:74557 Worker[74557] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74558 Worker[74558] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74559 Worker[74559] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74556] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74559] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74558] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74557] exit with status 65280
+2019-03-10 22:36:14 pid:74560 Worker[74560] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74561 Worker[74561] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74562 Worker[74562] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74563 Worker[74563] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74563] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74562] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74561] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74560] exit with status 65280
+2019-03-10 22:36:14 pid:74564 Worker[74564] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74565 Worker[74565] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74566 Worker[74566] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74567 Worker[74567] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74566] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74565] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74564] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74567] exit with status 65280
+2019-03-10 22:36:14 pid:74568 Worker[74568] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74570 Worker[74570] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74571 Worker[74571] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74569 Worker[74569] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74571] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74570] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74569] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74568] exit with status 65280
+2019-03-10 22:36:14 pid:74572 Worker[74572] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74573 Worker[74573] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74574 Worker[74574] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74575 Worker[74575] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74575] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74574] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74573] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74572] exit with status 65280
+2019-03-10 22:36:14 pid:74576 Worker[74576] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74577 Worker[74577] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74578 Worker[74578] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74579 Worker[74579] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74576] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74577] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74578] exit with status 65280
+2019-03-10 22:36:14 pid:74580 Worker[74580] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74579] exit with status 65280
+2019-03-10 22:36:14 pid:74581 Worker[74581] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74582 Worker[74582] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74583 Worker[74583] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74581] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74583] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74582] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74580] exit with status 65280
+2019-03-10 22:36:14 pid:74584 Worker[74584] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74586 Worker[74586] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74585 Worker[74585] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74587 Worker[74587] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74587] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74586] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74585] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74584] exit with status 65280
+2019-03-10 22:36:14 pid:74589 Worker[74589] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74588 Worker[74588] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74590 Worker[74590] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74591 Worker[74591] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74589] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74588] exit with status 65280
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74590] exit with status 65280
+2019-03-10 22:36:14 pid:74592 Worker[74592] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74593 Worker[74593] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74591] exit with status 65280
+2019-03-10 22:36:14 pid:74594 Worker[74594] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:14 pid:74363 worker[VoChatBusinessWorker:74593] exit with status 65280
+2019-03-10 22:36:15 pid:74595 Worker[74595] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74594] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74592] exit with status 65280
+2019-03-10 22:36:15 pid:74596 Worker[74596] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74597 Worker[74597] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74595] exit with status 65280
+2019-03-10 22:36:15 pid:74598 Worker[74598] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74596] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74597] exit with status 65280
+2019-03-10 22:36:15 pid:74599 Worker[74599] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74598] exit with status 65280
+2019-03-10 22:36:15 pid:74600 Worker[74600] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74601 Worker[74601] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74602 Worker[74602] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74600] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74599] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74602] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74601] exit with status 65280
+2019-03-10 22:36:15 pid:74603 Worker[74603] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74604 Worker[74604] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74605 Worker[74605] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74606 Worker[74606] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74603] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74605] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74606] exit with status 65280
+2019-03-10 22:36:15 pid:74607 Worker[74607] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74608 Worker[74608] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74609 Worker[74609] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74604] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74607] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74608] exit with status 65280
+2019-03-10 22:36:15 pid:74610 Worker[74610] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74609] exit with status 65280
+2019-03-10 22:36:15 pid:74611 Worker[74611] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74612 Worker[74612] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74613 Worker[74613] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74611] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74610] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74612] exit with status 65280
+2019-03-10 22:36:15 pid:74614 Worker[74614] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74615 Worker[74615] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74613] exit with status 65280
+2019-03-10 22:36:15 pid:74616 Worker[74616] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74617 Worker[74617] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74615] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74614] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74616] exit with status 65280
+2019-03-10 22:36:15 pid:74619 Worker[74619] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74618 Worker[74618] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74617] exit with status 65280
+2019-03-10 22:36:15 pid:74620 Worker[74620] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74621 Worker[74621] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74620] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74619] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74621] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74618] exit with status 65280
+2019-03-10 22:36:15 pid:74622 Worker[74622] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74624 Worker[74624] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74623 Worker[74623] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74625 Worker[74625] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74625] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74624] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74623] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74622] exit with status 65280
+2019-03-10 22:36:15 pid:74627 Worker[74627] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74629 Worker[74629] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74626 Worker[74626] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74628 Worker[74628] process terminated with ERROR: E_COMPILE_ERROR "require(): Failed opening required '/Users/yaopeng/studyworkerman/VoChat/Applications/VoChatmodel/ActionType.php' (include_path='.:') in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php on line 21"
+2019-03-10 22:36:15 pid:74363 Workerman[start.php] stopping ...
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74629] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74628] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74627] exit with status 65280
+2019-03-10 22:36:15 pid:74363 worker[VoChatBusinessWorker:74626] exit with status 65280
+2019-03-10 22:36:15 pid:74363 Workerman[start.php] has been stopped
+2019-03-10 22:36:52 pid:74668 Workerman[start.php] start in DEBUG mode
+2019-03-10 22:36:54 pid:74668 Workerman[start.php] stopping ...
+2019-03-10 22:36:54 pid:74668 Workerman[start.php] has been stopped
