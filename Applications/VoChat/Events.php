@@ -18,10 +18,14 @@
  * 然后观察一段时间workerman.log看是否有process_timeout异常
  */
 //declare(ticks=1);
-require __DIR__.'/model/ActionType.php';
+require_once __DIR__.'/model/ActionType.php';
+require_once __DIR__.'/model/UserController.php';
+require_once __DIR__.'/mysql-master/src/Connection.php';
+require_once __DIR__ . '/model/UserDao.php';
 
 use \GatewayWorker\Lib\Gateway;
-use \VoChat\Model\ActionType;
+use \Vochat\Model\UserController;
+use \VoChat\Model\UserDao;
 
 /**
  * 主逻辑
@@ -30,22 +34,22 @@ use \VoChat\Model\ActionType;
  */
 class Events
 {
-    /**
-     * 当客户端连接时触发
-     * 如果业务不需此回调可以删除onConnect
-     *
-     * @param int $client_id 连接id
-     * @throws Exception
-     */
-    public static function onConnect($client_id)
-    {
-        $action['id'] = 0;
-        $action['cmd'] = 0;
-        $action['msg'] = "welcome to VoChat";
-        // 向当前client_id发送数据 
-        Gateway::sendToClient($client_id, json_encode($action));
+    public static function onWorkerStart($worker){
+        //初始化数据库
+        global $db;
+        $db = new \Workerman\MySQL\Connection('120.78.175.94', '3306', 'root', 'yaopeng', 'vochat');
+
+//        UserDao::login("18978403462","123456");
+
+        //初始化控制器
+        global $controllersArray;
+        $userController = new UserController();
+        $controllersArray = array(
+            $userController
+        );
 
     }
+
 
     /**
      * 当客户端发来消息时触发
@@ -55,52 +59,40 @@ class Events
      */
    public static function onMessage($client_id, $message)
    {
-       $action = json_decode($message,true);
-       if (isset($action['cmd'])){
-           switch ($action['cmd']){
-               case ActionType::LOGIN:
-                   self::handleLogin($client_id,$action);
-                   break;
-               case 2:
-                   break;
-               case 3:
-                   break;
-               default:
-           }
+       $request = json_decode($message,true);
+       if (isset($request['cmd'])){
+           $cmd = $request['cmd'];
+           self::callHook($cmd,$client_id,$request);
+       }else{
+           echo "缺少cmd参数";
        }
 
-        // 向所有人发送 
-//        Gateway::sendToAll(json_encode($action));
    }
+
 
     /**
-     * 当用户断开连接时触发
-     * @param int $client_id 连接id
-     * @throws Exception
+     *
+     * @param $cmd
+     * @param $client_id
+     * @param $request
      */
-   public static function onClose($client_id)
-   {
-//        $action['id'] = 0;
-//        $action['cmd'] = 0;
-//        $action['msg'] = "$client_id logout";
-       // 向所有人发送 
-//       GateWay::sendToAll(json_encode($action));
-   }
+    private static function callHook($cmd,$client_id,$request) {
+        global $controllersArray;
+        $hasMethod = false;
+        foreach ($controllersArray as $controller)
+        {
+            $action = $controller->getAction($cmd);
+            echo $action;
+            if (method_exists($controller, $action)){
+                call_user_func_array(array($controller, $action), array($client_id,$request));
+                $hasMethod = true;
+                break;
+            }
+        }
 
+        if (!$hasMethod){
+            echo '无法处理CMD:'.$cmd;
+        }
+    }
 
-   private static function handleLogin($client_id,$action){
-       $name = $action['name'];
-       $pass = $action['pass'];
-       $res['id'] = $action['id'];
-       $res['cmd'] = $action['cmd'];
-       if ($name=="yaopeng"&&$pass=="123456"){
-           $res['status'] = 0;
-           $res['msg'] = 'login success!';
-       }else{
-           $res['status'] = 1;
-           $res['msg'] = 'login error';
-       }
-
-       Gateway::sendToClient($client_id, json_encode($res));
-   }
 }

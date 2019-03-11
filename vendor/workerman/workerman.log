@@ -2695,3 +2695,997 @@ Stack trace:
 2019-03-10 22:40:52 pid:75404 Workerman[start.php] start in DEBUG mode
 2019-03-10 22:40:56 pid:75404 Workerman[start.php] stopping ...
 2019-03-10 22:40:56 pid:75404 Workerman[start.php] has been stopped
+2019-03-11 16:02:07 pid:83123 Workerman[start.php] start in DEBUG mode
+2019-03-11 16:02:17 pid:83132 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:02:17 pid:83132 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:02:17 pid:83132 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:02:17 pid:83132 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:02:37 pid:83124 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-11 16:02:37 pid:83126 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-11 16:02:37 pid:83125 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-11 16:02:37 pid:83127 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-11 16:02:38 pid:83124 Worker[83124] process terminated
+2019-03-11 16:02:38 pid:83126 Worker[83126] process terminated
+2019-03-11 16:02:38 pid:83125 Worker[83125] process terminated
+2019-03-11 16:02:38 pid:83127 Worker[83127] process terminated
+2019-03-11 16:02:38 pid:83123 worker[VoChatBusinessWorker:83127] exit with status 64000
+2019-03-11 16:02:38 pid:83123 worker[VoChatBusinessWorker:83126] exit with status 64000
+2019-03-11 16:02:38 pid:83123 worker[VoChatBusinessWorker:83125] exit with status 64000
+2019-03-11 16:02:38 pid:83123 worker[VoChatBusinessWorker:83124] exit with status 64000
+2019-03-11 16:02:48 pid:83132 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:02:48 pid:83132 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:02:48 pid:83132 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:02:48 pid:83132 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:03:08 pid:83142 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:03:08 pid:83139 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:03:08 pid:83140 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:03:08 pid:83141 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:03:09 pid:83142 Worker[83142] process terminated
+2019-03-11 16:03:09 pid:83139 Worker[83139] process terminated
+2019-03-11 16:03:09 pid:83140 Worker[83140] process terminated
+2019-03-11 16:03:09 pid:83141 Worker[83141] process terminated
+2019-03-11 16:03:09 pid:83123 worker[VoChatBusinessWorker:83140] exit with status 64000
+2019-03-11 16:03:09 pid:83123 worker[VoChatBusinessWorker:83142] exit with status 64000
+2019-03-11 16:03:09 pid:83123 worker[VoChatBusinessWorker:83141] exit with status 64000
+2019-03-11 16:03:09 pid:83123 worker[VoChatBusinessWorker:83139] exit with status 64000
+2019-03-11 16:03:19 pid:83132 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:03:19 pid:83132 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:03:19 pid:83132 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:03:19 pid:83132 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:03:39 pid:83158 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:03:39 pid:83159 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:03:39 pid:83160 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:03:39 pid:83161 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:03:40 pid:83158 Worker[83158] process terminated
+2019-03-11 16:03:40 pid:83123 worker[VoChatBusinessWorker:83158] exit with status 64000
+2019-03-11 16:03:40 pid:83159 Worker[83159] process terminated
+2019-03-11 16:03:40 pid:83160 Worker[83160] process terminated
+2019-03-11 16:03:41 pid:83161 Worker[83161] process terminated
+2019-03-11 16:03:41 pid:83123 worker[VoChatBusinessWorker:83161] exit with status 64000
+2019-03-11 16:03:41 pid:83123 worker[VoChatBusinessWorker:83160] exit with status 64000
+2019-03-11 16:03:41 pid:83123 worker[VoChatBusinessWorker:83159] exit with status 64000
+2019-03-11 16:03:50 pid:83132 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:03:51 pid:83132 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:03:51 pid:83132 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:03:51 pid:83132 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:04:11 pid:83169 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:04:11 pid:83171 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:04:11 pid:83172 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:04:11 pid:83170 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:04:12 pid:83169 Worker[83169] process terminated
+2019-03-11 16:04:12 pid:83123 worker[VoChatBusinessWorker:83169] exit with status 64000
+2019-03-11 16:04:12 pid:83171 Worker[83171] process terminated
+2019-03-11 16:04:12 pid:83172 Worker[83172] process terminated
+2019-03-11 16:04:12 pid:83123 worker[VoChatBusinessWorker:83171] exit with status 64000
+2019-03-11 16:04:12 pid:83123 worker[VoChatBusinessWorker:83172] exit with status 64000
+2019-03-11 16:04:12 pid:83170 Worker[83170] process terminated
+2019-03-11 16:04:12 pid:83123 worker[VoChatBusinessWorker:83170] exit with status 64000
+2019-03-11 16:04:22 pid:83132 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:04:22 pid:83132 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:04:22 pid:83132 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:04:22 pid:83132 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:04:31 pid:83123 Workerman[start.php] stopping ...
+2019-03-11 16:04:31 pid:83179 PDOException: SQLSTATE[HY000] [2002] Operation now in progress in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:04:31 pid:83180 PDOException: SQLSTATE[HY000] [2002] Operation now in progress in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:04:31 pid:83181 PDOException: SQLSTATE[HY000] [2002] Operation now in progress in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:04:31 pid:83182 PDOException: SQLSTATE[HY000] [2002] Operation now in progress in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:04:32 pid:83179 Worker[83179] process terminated
+2019-03-11 16:04:32 pid:83180 Worker[83180] process terminated
+2019-03-11 16:04:32 pid:83181 Worker[83181] process terminated
+2019-03-11 16:04:32 pid:83182 Worker[83182] process terminated
+2019-03-11 16:04:32 pid:83123 worker[VoChatBusinessWorker:83179] exit with status 64000
+2019-03-11 16:04:32 pid:83123 worker[VoChatBusinessWorker:83182] exit with status 64000
+2019-03-11 16:04:32 pid:83123 worker[VoChatBusinessWorker:83181] exit with status 64000
+2019-03-11 16:04:32 pid:83123 worker[VoChatBusinessWorker:83180] exit with status 64000
+2019-03-11 16:04:32 pid:83123 Workerman[start.php] has been stopped
+2019-03-11 16:05:17 pid:83198 Workerman[start.php] start in DEBUG mode
+2019-03-11 16:08:12 pid:83198 Workerman[start.php] stopping ...
+2019-03-11 16:08:12 pid:83198 Workerman[start.php] has been stopped
+2019-03-11 16:08:14 pid:83262 Workerman[start.php] start in DEBUG mode
+2019-03-11 16:08:24 pid:83271 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:08:24 pid:83271 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:08:24 pid:83271 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:08:24 pid:83271 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:08:44 pid:83263 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-11 16:08:44 pid:83266 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-11 16:08:44 pid:83265 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-11 16:08:44 pid:83264 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-11 16:08:45 pid:83264 Worker[83264] process terminated
+2019-03-11 16:08:45 pid:83265 Worker[83265] process terminated
+2019-03-11 16:08:45 pid:83263 Worker[83263] process terminated
+2019-03-11 16:08:45 pid:83266 Worker[83266] process terminated
+2019-03-11 16:08:45 pid:83262 worker[VoChatBusinessWorker:83266] exit with status 64000
+2019-03-11 16:08:45 pid:83262 worker[VoChatBusinessWorker:83265] exit with status 64000
+2019-03-11 16:08:45 pid:83262 worker[VoChatBusinessWorker:83264] exit with status 64000
+2019-03-11 16:08:45 pid:83262 worker[VoChatBusinessWorker:83263] exit with status 64000
+2019-03-11 16:08:55 pid:83271 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:08:55 pid:83271 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:08:55 pid:83271 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:08:55 pid:83271 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:09:15 pid:83279 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:09:15 pid:83281 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:09:15 pid:83280 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:09:15 pid:83282 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:09:16 pid:83279 Worker[83279] process terminated
+2019-03-11 16:09:16 pid:83281 Worker[83281] process terminated
+2019-03-11 16:09:16 pid:83280 Worker[83280] process terminated
+2019-03-11 16:09:16 pid:83282 Worker[83282] process terminated
+2019-03-11 16:09:16 pid:83262 worker[VoChatBusinessWorker:83279] exit with status 64000
+2019-03-11 16:09:16 pid:83262 worker[VoChatBusinessWorker:83281] exit with status 64000
+2019-03-11 16:09:16 pid:83262 worker[VoChatBusinessWorker:83280] exit with status 64000
+2019-03-11 16:09:16 pid:83262 worker[VoChatBusinessWorker:83282] exit with status 64000
+2019-03-11 16:09:26 pid:83271 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:09:26 pid:83271 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:09:26 pid:83271 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:09:26 pid:83271 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:09:43 pid:83292 PDOException: SQLSTATE[HY000] [2002] Operation now in progress in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:09:43 pid:83293 PDOException: SQLSTATE[HY000] [2002] Operation now in progress in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:09:43 pid:83262 Workerman[start.php] stopping ...
+2019-03-11 16:09:43 pid:83294 PDOException: SQLSTATE[HY000] [2002] Operation now in progress in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:09:43 pid:83292 Worker[83292] process terminated
+2019-03-11 16:09:43 pid:83295 PDOException: SQLSTATE[HY000] [2002] Operation now in progress in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/start.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:09:43 pid:83293 Worker[83293] process terminated
+2019-03-11 16:09:43 pid:83262 worker[VoChatBusinessWorker:83292] exit with status 64000
+2019-03-11 16:09:43 pid:83262 worker[VoChatBusinessWorker:83293] exit with status 64000
+2019-03-11 16:09:44 pid:83294 Worker[83294] process terminated
+2019-03-11 16:09:44 pid:83295 Worker[83295] process terminated
+2019-03-11 16:09:44 pid:83262 worker[VoChatBusinessWorker:83295] exit with status 64000
+2019-03-11 16:09:44 pid:83262 worker[VoChatBusinessWorker:83294] exit with status 64000
+2019-03-11 16:09:44 pid:83262 Workerman[start.php] has been stopped
+2019-03-11 16:12:18 pid:83358 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 16:12:29 pid:83367 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:12:29 pid:83367 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:12:29 pid:83367 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:12:29 pid:83367 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2019-03-11 16:12:49 pid:83362 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-11 16:12:49 pid:83360 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-11 16:12:49 pid:83359 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-11 16:12:49 pid:83361 PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-11 16:12:50 pid:83362 Worker[83362] process terminated
+2019-03-11 16:12:50 pid:83360 Worker[83360] process terminated
+2019-03-11 16:12:50 pid:83359 Worker[83359] process terminated
+2019-03-11 16:12:50 pid:83361 Worker[83361] process terminated
+2019-03-11 16:12:50 pid:83358 worker[VoChatDevBusinessWorker:83362] exit with status 64000
+2019-03-11 16:12:50 pid:83358 worker[VoChatDevBusinessWorker:83361] exit with status 64000
+2019-03-11 16:12:50 pid:83358 worker[VoChatDevBusinessWorker:83360] exit with status 64000
+2019-03-11 16:12:50 pid:83358 worker[VoChatDevBusinessWorker:83359] exit with status 64000
+2019-03-11 16:12:54 pid:83374 PDOException: SQLSTATE[HY000] [2002] Operation now in progress in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:12:54 pid:83358 Workerman[startdev.php] stopping ...
+2019-03-11 16:12:54 pid:83376 PDOException: SQLSTATE[HY000] [2002] Operation now in progress in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:12:54 pid:83374 Worker[83374] process terminated
+2019-03-11 16:12:54 pid:83375 PDOException: SQLSTATE[HY000] [2002] Operation now in progress in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:12:54 pid:83377 PDOException: SQLSTATE[HY000] [2002] Operation now in progress in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(36): Workerman\MySQL\Connection->__construct('127.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-11 16:12:54 pid:83358 worker[VoChatDevBusinessWorker:83374] exit with status 64000
+2019-03-11 16:12:55 pid:83375 Worker[83375] process terminated
+2019-03-11 16:12:55 pid:83376 Worker[83376] process terminated
+2019-03-11 16:12:55 pid:83377 Worker[83377] process terminated
+2019-03-11 16:12:55 pid:83358 worker[VoChatDevBusinessWorker:83377] exit with status 64000
+2019-03-11 16:12:55 pid:83358 worker[VoChatDevBusinessWorker:83376] exit with status 64000
+2019-03-11 16:12:55 pid:83358 worker[VoChatDevBusinessWorker:83375] exit with status 64000
+2019-03-11 16:12:55 pid:83358 Workerman[startdev.php] has been stopped
+2019-03-11 16:17:51 pid:83495 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 16:23:17 pid:83495 Workerman[startdev.php] stopping ...
+2019-03-11 16:23:17 pid:83495 Workerman[startdev.php] has been stopped
+2019-03-11 16:23:19 pid:83608 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 16:23:59 pid:83608 Workerman[startdev.php] stopping ...
+2019-03-11 16:23:59 pid:83608 Workerman[startdev.php] has been stopped
+2019-03-11 16:24:02 pid:83628 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 16:38:48 pid:83628 Workerman[startdev.php] stopping ...
+2019-03-11 16:38:49 pid:83628 Workerman[startdev.php] has been stopped
+2019-03-11 16:38:51 pid:83890 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 16:43:08 pid:83890 Workerman[startdev.php] stopping ...
+2019-03-11 16:43:08 pid:83890 Workerman[startdev.php] has been stopped
+2019-03-11 16:43:11 pid:83968 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 16:44:16 pid:83968 Workerman[startdev.php] stopping ...
+2019-03-11 16:44:16 pid:83968 Workerman[startdev.php] has been stopped
+2019-03-11 16:44:19 pid:83991 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 16:49:22 pid:83991 Workerman[startdev.php] stopping ...
+2019-03-11 16:49:22 pid:83991 Workerman[startdev.php] has been stopped
+2019-03-11 16:49:25 pid:84087 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 16:50:37 pid:84087 Workerman[startdev.php] stopping ...
+2019-03-11 16:50:37 pid:84087 Workerman[startdev.php] has been stopped
+2019-03-11 16:50:47 pid:84123 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 16:51:06 pid:84123 Workerman[startdev.php] stopping ...
+2019-03-11 16:51:06 pid:84123 Workerman[startdev.php] has been stopped
+2019-03-11 16:51:08 pid:84131 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 17:02:27 pid:84131 Workerman[startdev.php] stopping ...
+2019-03-11 17:02:27 pid:84131 Workerman[startdev.php] has been stopped
+2019-03-11 17:02:30 pid:84310 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 17:03:23 pid:84310 Workerman[startdev.php] stopping ...
+2019-03-11 17:03:23 pid:84310 Workerman[startdev.php] has been stopped
+2019-03-11 17:03:25 pid:84330 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 17:04:30 pid:84330 Workerman[startdev.php] stopping ...
+2019-03-11 17:04:30 pid:84330 Workerman[startdev.php] has been stopped
+2019-03-11 17:04:32 pid:84350 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 17:04:36 pid:84350 Workerman[startdev.php] stopping ...
+2019-03-11 17:04:36 pid:84350 Workerman[startdev.php] has been stopped
+2019-03-11 17:04:51 pid:84361 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 17:15:30 pid:84361 Workerman[startdev.php] stopping ...
+2019-03-11 17:15:30 pid:84361 Workerman[startdev.php] has been stopped
+2019-03-11 17:15:32 pid:84510 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 17:15:45 pid:84510 Workerman[startdev.php] stopping ...
+2019-03-11 17:15:45 pid:84510 Workerman[startdev.php] has been stopped
+2019-03-11 17:15:49 pid:84520 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 17:15:49 pid:84521 Error: Call to undefined function VoChat\Model\select() in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/model/User.php:26
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(41): VoChat\Model\User::register(Object(Workerman\MySQL\Connection), '18978403462', '123456')
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#5 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#10 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#11 {main}
+2019-03-11 17:15:50 pid:84521 Worker[84521] process terminated
+2019-03-11 17:15:50 pid:84520 worker[VoChatDevBusinessWorker:84521] exit with status 64000
+2019-03-11 17:15:50 pid:84524 Error: Call to undefined function VoChat\Model\select() in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/model/User.php:26
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(41): VoChat\Model\User::register(Object(Workerman\MySQL\Connection), '18978403462', '123456')
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#5 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-11 17:15:51 pid:84524 Worker[84524] process terminated
+2019-03-11 17:15:51 pid:84520 worker[VoChatDevBusinessWorker:84524] exit with status 64000
+2019-03-11 17:15:51 pid:84525 Error: Call to undefined function VoChat\Model\select() in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/model/User.php:26
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(41): VoChat\Model\User::register(Object(Workerman\MySQL\Connection), '18978403462', '123456')
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#5 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-11 17:15:52 pid:84525 Worker[84525] process terminated
+2019-03-11 17:15:52 pid:84520 worker[VoChatDevBusinessWorker:84525] exit with status 64000
+2019-03-11 17:15:52 pid:84526 Error: Call to undefined function VoChat\Model\select() in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/model/User.php:26
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(41): VoChat\Model\User::register(Object(Workerman\MySQL\Connection), '18978403462', '123456')
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#5 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-11 17:15:52 pid:84526 Worker[84526] process terminated
+2019-03-11 17:15:52 pid:84520 Workerman[startdev.php] stopping ...
+2019-03-11 17:15:53 pid:84520 worker[VoChatDevBusinessWorker:84526] exit with status 64000
+2019-03-11 17:15:53 pid:84520 Workerman[startdev.php] has been stopped
+2019-03-11 17:16:42 pid:84541 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 17:17:32 pid:84541 Workerman[startdev.php] stopping ...
+2019-03-11 17:17:32 pid:84541 Workerman[startdev.php] has been stopped
+2019-03-11 17:17:34 pid:84559 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 22:01:23 pid:84559 Workerman[startdev.php] stopping ...
+2019-03-11 22:01:23 pid:84559 Workerman[startdev.php] has been stopped
+2019-03-11 22:01:25 pid:89821 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 22:02:16 pid:89821 Workerman[startdev.php] stopping ...
+2019-03-11 22:02:16 pid:89821 Workerman[startdev.php] has been stopped
+2019-03-11 22:02:19 pid:89839 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 22:34:53 pid:89839 Workerman[startdev.php] stopping ...
+2019-03-11 22:34:54 pid:89839 Workerman[startdev.php] has been stopped
+2019-03-11 22:34:56 pid:90389 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 22:35:26 pid:90389 Workerman[startdev.php] stopping ...
+2019-03-11 22:35:26 pid:90389 Workerman[startdev.php] has been stopped
+2019-03-11 22:35:28 pid:90402 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 22:38:27 pid:90402 Workerman[startdev.php] stopping ...
+2019-03-11 22:38:27 pid:90402 Workerman[startdev.php] has been stopped
+2019-03-11 22:38:29 pid:90498 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 22:48:16 pid:90498 Workerman[startdev.php] stopping ...
+2019-03-11 22:48:16 pid:90498 Workerman[startdev.php] has been stopped
+2019-03-11 22:48:17 pid:90661 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 22:49:44 pid:90661 Workerman[startdev.php] stopping ...
+2019-03-11 22:49:44 pid:90661 Workerman[startdev.php] has been stopped
+2019-03-11 22:49:45 pid:90683 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 22:49:59 pid:90683 Workerman[startdev.php] stopping ...
+2019-03-11 22:49:59 pid:90683 Workerman[startdev.php] has been stopped
+2019-03-11 22:50:00 pid:90693 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 22:55:07 pid:90693 Workerman[startdev.php] stopping ...
+2019-03-11 22:55:07 pid:90693 Workerman[startdev.php] has been stopped
+2019-03-11 22:55:09 pid:90803 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 22:55:28 pid:90803 Workerman[startdev.php] stopping ...
+2019-03-11 22:55:28 pid:90803 Workerman[startdev.php] has been stopped
+2019-03-11 22:55:29 pid:90813 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 22:56:18 pid:90813 Workerman[startdev.php] stopping ...
+2019-03-11 22:56:18 pid:90813 Workerman[startdev.php] has been stopped
+2019-03-11 22:56:20 pid:90842 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 22:56:40 pid:90842 Workerman[startdev.php] stopping ...
+2019-03-11 22:56:40 pid:90842 Workerman[startdev.php] has been stopped
+2019-03-11 22:56:41 pid:90857 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 22:57:46 pid:90857 Workerman[startdev.php] stopping ...
+2019-03-11 22:57:46 pid:90857 Workerman[startdev.php] has been stopped
+2019-03-11 22:57:48 pid:90878 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 22:58:03 pid:90878 Workerman[startdev.php] stopping ...
+2019-03-11 22:58:03 pid:90878 Workerman[startdev.php] has been stopped
+2019-03-11 22:58:04 pid:90887 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 23:05:08 pid:90887 Workerman[startdev.php] stopping ...
+2019-03-11 23:05:09 pid:90887 Workerman[startdev.php] has been stopped
+2019-03-11 23:05:23 pid:91061 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 23:39:10 pid:91061 Workerman[startdev.php] stopping ...
+2019-03-11 23:39:10 pid:91061 Workerman[startdev.php] has been stopped
+2019-03-11 23:39:12 pid:91703 Workerman[startdev.php] start in DEBUG mode
+2019-03-11 23:39:33 pid:91703 Workerman[startdev.php] stopping ...
+2019-03-11 23:39:33 pid:91703 Workerman[startdev.php] has been stopped
+2019-03-11 23:39:57 pid:91722 Workerman[startdev.php] start in DEBUG mode

@@ -1,15 +1,15 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: yaopeng
+ * UserDao: yaopeng
  * Date: 2019-03-10
  * Time: 03:47
  */
 namespace VoChat\Model;
 class ActionType
 {
-    const LOGIN   = 1000;
-    const VOID   = 1;
+    const USUER_LOGIN   = 1000;
+    const USER_REGISTER   = 1001;
     const BOOL   = 2;
     const BYTE   = 3;
     const I08    = 3;
