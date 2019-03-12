@@ -22,10 +22,13 @@ require_once __DIR__.'/model/ActionType.php';
 require_once __DIR__.'/model/UserController.php';
 require_once __DIR__.'/mysql-master/src/Connection.php';
 require_once __DIR__ . '/model/UserDao.php';
+require_once __DIR__.'/php-validator/ValidatorHelper.php';
+
 
 use \GatewayWorker\Lib\Gateway;
 use \Vochat\Model\UserController;
 use \VoChat\Model\UserDao;
+use Yunhack\PHPValidator\ValidatorHelper;
 
 /**
  * 主逻辑
@@ -39,14 +42,29 @@ class Events
         global $db;
         $db = new \Workerman\MySQL\Connection('120.78.175.94', '3306', 'root', 'yaopeng', 'vochat');
 
-//        UserDao::login("18978403462","123456");
-
+//        $resp = UserDao::login("18978403465","123456");
+//        echo json_encode($resp);
         //初始化控制器
         global $controllersArray;
         $userController = new UserController();
         $controllersArray = array(
             $userController
         );
+
+//        $param = array(
+//            'phone'=>'18978403462'
+//        );
+//        ValidatorHelper::make($param, [
+//            'phone' => 'present|mobile',
+//            'money' => 'present',
+//            'time' => 'date_format:Y-m-d',
+//        ]);
+//
+//        if (ValidatorHelper::has_fails()) {
+//            echo ValidatorHelper::error_msg();
+//        } else {
+//            echo "参数正确！";
+//        }
 
     }
 
@@ -64,7 +82,12 @@ class Events
            $cmd = $request['cmd'];
            self::callHook($cmd,$client_id,$request);
        }else{
-           echo "缺少cmd参数";
+            $resp = array(
+                'id'=>$request['id'],
+                'code'=>'404',
+                'msg'=>'缺少cmd参数或服务器无法处理该cmd'
+            );
+           Gateway::sendToClient($client_id,json_encode($resp));
        }
 
    }

@@ -8,21 +8,8 @@
 namespace VoChat\Model;
 class ActionType
 {
-    const USUER_LOGIN   = 1000;
-    const USER_REGISTER   = 1001;
-    const BOOL   = 2;
-    const BYTE   = 3;
-    const I08    = 3;
-    const DOUBLE = 4;
-    const I16    = 6;
-    const I32    = 8;
-    const I64    = 10;
-    const STRING = 11;
-    const UTF7   = 11;
-    const STRUCT = 12;
-    const MAP    = 13;
-    const SET    = 14;
-    const LST    = 15;
-    const UTF8   = 16;
-    const UTF16  = 17;
+    const USER_LOGIN   = 1000;//用户登录
+    const USER_REGISTER   = 1001;//用户注册
+    const USER_BING   = 1002;//用户绑定/每次成功连接到服务器时都用用户id跟当前连接绑定
+
 }
