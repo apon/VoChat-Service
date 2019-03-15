@@ -6128,3 +6128,228 @@ Stack trace:
 2019-03-12 21:31:24 pid:3450 Workerman[startdev.php] start in DEBUG mode
 2019-03-12 21:31:37 pid:3450 Workerman[startdev.php] stopping ...
 2019-03-12 21:31:37 pid:3450 Workerman[startdev.php] has been stopped
+2019-03-15 17:49:41 pid:35126 Workerman[startdev.php] start in DEBUG mode
+2019-03-15 17:49:41 pid:35127 PDOException: SQL:SELECT * FROM `Users` WHERE phone like 189%  LIMIT 20 SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%  LIMIT 20' at line 1 in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1772
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1830): Workerman\MySQL\Connection->execute('SELECT * FROM `...', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/model/UserDao.php(100): Workerman\MySQL\Connection->query()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(47): VoChat\Model\UserDao::searchUser('189')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-15 17:49:42 pid:35127 Worker[35127] process terminated
+2019-03-15 17:49:42 pid:35126 worker[VoChatDevBusinessWorker:35127] exit with status 64000
+2019-03-15 17:49:42 pid:35130 PDOException: SQL:SELECT * FROM `Users` WHERE phone like 189%  LIMIT 20 SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%  LIMIT 20' at line 1 in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1772
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1830): Workerman\MySQL\Connection->execute('SELECT * FROM `...', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/model/UserDao.php(100): Workerman\MySQL\Connection->query()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(47): VoChat\Model\UserDao::searchUser('189')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-15 17:49:43 pid:35130 Worker[35130] process terminated
+2019-03-15 17:49:43 pid:35126 worker[VoChatDevBusinessWorker:35130] exit with status 64000
+2019-03-15 17:49:44 pid:35132 PDOException: SQL:SELECT * FROM `Users` WHERE phone like 189%  LIMIT 20 SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%  LIMIT 20' at line 1 in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1772
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1830): Workerman\MySQL\Connection->execute('SELECT * FROM `...', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/model/UserDao.php(100): Workerman\MySQL\Connection->query()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(47): VoChat\Model\UserDao::searchUser('189')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-15 17:49:45 pid:35132 Worker[35132] process terminated
+2019-03-15 17:49:45 pid:35126 Workerman[startdev.php] stopping ...
+2019-03-15 17:49:45 pid:35126 worker[VoChatDevBusinessWorker:35132] exit with status 64000
+2019-03-15 17:49:45 pid:35126 Workerman[startdev.php] has been stopped
+2019-03-15 17:50:51 pid:35148 Workerman[startdev.php] start in DEBUG mode
+2019-03-15 17:52:20 pid:35148 Workerman[startdev.php] stopping ...
+2019-03-15 17:52:20 pid:35148 Workerman[startdev.php] has been stopped
+2019-03-15 17:52:22 pid:35176 Workerman[startdev.php] start in DEBUG mode
+2019-03-15 17:56:16 pid:35176 Workerman[startdev.php] stopping ...
+2019-03-15 17:56:16 pid:35176 Workerman[startdev.php] has been stopped
+2019-03-15 17:56:17 pid:35242 Workerman[startdev.php] start in DEBUG mode
+2019-03-15 17:57:27 pid:35242 Workerman[startdev.php] stopping ...
+2019-03-15 17:57:27 pid:35242 Workerman[startdev.php] has been stopped
+2019-03-15 17:57:28 pid:35266 Workerman[startdev.php] start in DEBUG mode
+2019-03-15 17:57:29 pid:35267 PDOException: SQL:SELECT * FROM `Users` WHERE phone like 1897840346.'%'  LIMIT 20 SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''%'  LIMIT 20' at line 1 in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1772
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1830): Workerman\MySQL\Connection->execute('SELECT * FROM `...', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/model/UserDao.php(100): Workerman\MySQL\Connection->query()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(47): VoChat\Model\UserDao::searchUser('1897840346')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-15 17:57:30 pid:35267 Worker[35267] process terminated
+2019-03-15 17:57:30 pid:35266 worker[VoChatDevBusinessWorker:35267] exit with status 64000
+2019-03-15 17:57:30 pid:35270 PDOException: SQL:SELECT * FROM `Users` WHERE phone like 1897840346.'%'  LIMIT 20 SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''%'  LIMIT 20' at line 1 in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1772
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1830): Workerman\MySQL\Connection->execute('SELECT * FROM `...', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/model/UserDao.php(100): Workerman\MySQL\Connection->query()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(47): VoChat\Model\UserDao::searchUser('1897840346')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-15 17:57:31 pid:35270 Worker[35270] process terminated
+2019-03-15 17:57:31 pid:35266 worker[VoChatDevBusinessWorker:35270] exit with status 64000
+2019-03-15 17:57:31 pid:35271 PDOException: SQL:SELECT * FROM `Users` WHERE phone like 1897840346.'%'  LIMIT 20 SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''%'  LIMIT 20' at line 1 in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1772
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1830): Workerman\MySQL\Connection->execute('SELECT * FROM `...', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/model/UserDao.php(100): Workerman\MySQL\Connection->query()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(47): VoChat\Model\UserDao::searchUser('1897840346')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-15 17:57:31 pid:35271 Worker[35271] process terminated
+2019-03-15 17:57:31 pid:35266 Workerman[startdev.php] stopping ...
+2019-03-15 17:57:31 pid:35266 worker[VoChatDevBusinessWorker:35271] exit with status 64000
+2019-03-15 17:57:31 pid:35266 Workerman[startdev.php] has been stopped
+2019-03-15 17:58:35 pid:35289 Workerman[startdev.php] start in DEBUG mode
+2019-03-15 17:58:35 pid:35290 PDOException: SQL:SELECT * FROM `Users` WHERE phone like 1897840346%  LIMIT 20 SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%  LIMIT 20' at line 1 in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1772
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1830): Workerman\MySQL\Connection->execute('SELECT * FROM `...', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/model/UserDao.php(101): Workerman\MySQL\Connection->query()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(47): VoChat\Model\UserDao::searchUser('1897840346%')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-15 17:58:36 pid:35290 Worker[35290] process terminated
+2019-03-15 17:58:36 pid:35289 worker[VoChatDevBusinessWorker:35290] exit with status 64000
+2019-03-15 17:58:36 pid:35293 PDOException: SQL:SELECT * FROM `Users` WHERE phone like 1897840346%  LIMIT 20 SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%  LIMIT 20' at line 1 in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1772
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1830): Workerman\MySQL\Connection->execute('SELECT * FROM `...', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/model/UserDao.php(101): Workerman\MySQL\Connection->query()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(47): VoChat\Model\UserDao::searchUser('1897840346%')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-15 17:58:37 pid:35293 Worker[35293] process terminated
+2019-03-15 17:58:37 pid:35289 worker[VoChatDevBusinessWorker:35293] exit with status 64000
+2019-03-15 17:58:37 pid:35294 PDOException: SQL:SELECT * FROM `Users` WHERE phone like 1897840346%  LIMIT 20 SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%  LIMIT 20' at line 1 in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1772
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1830): Workerman\MySQL\Connection->execute('SELECT * FROM `...', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/model/UserDao.php(101): Workerman\MySQL\Connection->query()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(47): VoChat\Model\UserDao::searchUser('1897840346%')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-15 17:58:37 pid:35294 Worker[35294] process terminated
+2019-03-15 17:58:37 pid:35289 Workerman[startdev.php] stopping ...
+2019-03-15 17:58:37 pid:35289 worker[VoChatDevBusinessWorker:35294] exit with status 64000
+2019-03-15 17:58:37 pid:35289 Workerman[startdev.php] has been stopped
+2019-03-15 18:01:00 pid:35330 Workerman[startdev.php] start in DEBUG mode
+2019-03-15 18:02:59 pid:35330 Workerman[startdev.php] stopping ...
+2019-03-15 18:02:59 pid:35330 Workerman[startdev.php] has been stopped
+2019-03-15 18:03:01 pid:35366 Workerman[startdev.php] start in DEBUG mode
+2019-03-15 18:08:59 pid:35366 Workerman[startdev.php] stopping ...
+2019-03-15 18:08:59 pid:35366 Workerman[startdev.php] has been stopped
+2019-03-15 18:09:00 pid:35456 Workerman[startdev.php] start in DEBUG mode
+2019-03-15 18:09:24 pid:35456 Workerman[startdev.php] stopping ...
+2019-03-15 18:09:24 pid:35456 Workerman[startdev.php] has been stopped
+2019-03-15 18:09:26 pid:35468 Workerman[startdev.php] start in DEBUG mode
+2019-03-15 18:11:17 pid:35468 Workerman[startdev.php] stopping ...
+2019-03-15 18:11:17 pid:35468 Workerman[startdev.php] has been stopped
+2019-03-15 18:11:19 pid:35498 Workerman[startdev.php] start in DEBUG mode
+2019-03-15 18:11:29 pid:35498 Workerman[startdev.php] stopping ...
+2019-03-15 18:11:29 pid:35498 Workerman[startdev.php] has been stopped
+2019-03-15 18:11:30 pid:35504 Workerman[startdev.php] start in DEBUG mode
+2019-03-15 18:12:00 pid:35504 Workerman[startdev.php] stopping ...
+2019-03-15 18:12:00 pid:35504 Workerman[startdev.php] has been stopped
+2019-03-15 18:12:03 pid:35516 Workerman[startdev.php] start in DEBUG mode
+2019-03-15 18:12:13 pid:35516 Workerman[startdev.php] stopping ...
+2019-03-15 18:12:13 pid:35516 Workerman[startdev.php] has been stopped
+2019-03-15 18:12:15 pid:35522 Workerman[startdev.php] start in DEBUG mode
+2019-03-15 18:18:29 pid:35522 Workerman[startdev.php] stopping ...
+2019-03-15 18:18:29 pid:35522 Workerman[startdev.php] has been stopped
+2019-03-15 18:18:31 pid:35614 Workerman[startdev.php] start in DEBUG mode
+2019-03-15 18:30:21 pid:35614 Workerman[startdev.php] stopping ...
+2019-03-15 18:30:21 pid:35614 Workerman[startdev.php] has been stopped
+2019-03-15 18:30:27 pid:35777 Workerman[startdev.php] start in DEBUG mode
+2019-03-15 18:37:17 pid:35777 Workerman[startdev.php] stopping ...
+2019-03-15 18:37:17 pid:35777 Workerman[startdev.php] has been stopped
+2019-03-15 18:37:20 pid:35878 Workerman[startdev.php] start in DEBUG mode
+2019-03-15 19:01:14 pid:35878 Workerman[startdev.php] stopping ...
+2019-03-15 19:01:14 pid:35878 Workerman[startdev.php] has been stopped

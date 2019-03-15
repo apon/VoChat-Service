@@ -44,6 +44,8 @@ class Events
 
 //        $resp = UserDao::login("18978403465","123456");
 //        echo json_encode($resp);
+//        $resp = UserDao::searchUser("189");
+//        echo json_encode($resp);
         //初始化控制器
         global $controllersArray;
         $userController = new UserController();
@@ -82,8 +84,9 @@ class Events
            $cmd = $request['cmd'];
            self::callHook($cmd,$client_id,$request);
        }else{
+           var_dump($request);
             $resp = array(
-                'id'=>$request['id'],
+                'id'=>isset($request['id'])?$request['id']:-1,
                 'code'=>'404',
                 'msg'=>'缺少cmd参数或服务器无法处理该cmd'
             );

@@ -23,14 +23,15 @@ class UserDao
                 'name'=>$userName,
                 'phone'=>$phone,
                 'avatar'=>''))->query();
-            $userId = $db->select('id')->from('Users')->where("phone= $phone ")->row();
+            $user = $db->select('*')->from('Users')->where("phone= $phone ")->row();
             $db->insert('LocalAuth')->cols(array(
-                'user_id'=>$userId['id'],
+                'user_id'=>$user['id'],
                 'phone'=>$phone,
                 'password'=>$pass))->query();
             $db->commitTrans();
             $resp['code'] = 0;
             $resp['msg'] = '注册成功!';
+            $resp['data'] = $user;
         }
         return $resp;
     }
@@ -72,6 +73,56 @@ class UserDao
             }
         }
 
+        return $resp;
+    }
+
+    /**
+     * @param $userId
+     * @param $pass
+     * @return mixed
+     */
+    public static function resetPassword($userId,$pass){
+        global $db;
+        $row_count = $db->update('LocalAuth')->cols(array('password'=>$pass))->where("user_id=$userId")->query();
+        if ($row_count==0){
+            $resp['code'] = 1;
+            $resp['msg'] = '设置失败或与密码相同!';
+        }else{
+            $resp['code'] = 0;
+            $resp['msg'] = '成功重置密码!';
+        }
+        return $resp;
+    }
+
+    /**
+     * @param $userId
+     * @param $name
+     * @return mixed
+     */
+    public static function resetName($userId,$name){
+        global $db;
+        $row_count = $db->update('Users')->cols(array('name'=>$name))->where("id=$userId")->query();
+        if ($row_count==0){
+            $resp['code'] = 1;
+            $resp['msg'] = '设置失败或与原名相同!';
+        }else{
+            $resp['code'] = 0;
+            $resp['msg'] = '成功重置名称!';
+        }
+        return $resp;
+    }
+
+    /**
+     * @param $phone
+     * @return mixed
+     */
+    public static function searchUser($phone){
+        global $db;
+        $phone = $phone."%";
+        $searchResult = $db->select('*')->from('Users')->where("phone like '$phone' ")->limit(30)->query();
+        $resp['code'] = 0;
+        $resp['msg'] = '搜索完成!';
+        $resp['data'] = $searchResult;
         return $resp;
     }
 

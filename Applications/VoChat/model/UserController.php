@@ -23,9 +23,12 @@ class UserController
     }
 
     public $actionMap = array(
-        ActionType::USER_LOGIN => 'actionLogin',
-        ActionType::USER_REGISTER => 'actionRegister',
-        ActionType::USER_BING => 'actionBind'
+        ActionType::CMD_LOGIN => 'actionLogin',
+        ActionType::CMD_REGISTER => 'actionRegister',
+        ActionType::CMD_BING => 'actionBind',
+        ActionType::CMD_RESET_PASSWORD => 'actionResetPassword',
+        ActionType::CMD_RESET_NAME => 'actionResetName',
+        ActionType::CMD_SEARCH_USER => 'actionSearchUser'
     );
 
     /**
@@ -115,6 +118,84 @@ class UserController
             Gateway::sendToClient($client_id, json_encode($resp));
         }
 
+    }
+
+    /**
+     * 重置密码
+     * @param $client_id
+     * @param $request
+     */
+    public function actionResetPassword($client_id,$request){
+        $resp['id'] = $request['id'];
+        $resp['cmd'] = $request['cmd'];
+        $userId = Gateway::getUidByClientId($client_id);
+
+        ValidatorHelper::make($request, [
+            'password' => 'present'
+        ]);
+
+        if (ValidatorHelper::has_fails()) {//参数出错
+            echo ValidatorHelper::error_msg();
+            $resp['code'] = 200;
+            $resp['msg'] = ValidatorHelper::error_msg();
+            Gateway::sendToClient($client_id, json_encode($resp));
+        }elseif ($userId==null){
+            $resp['code'] = 201;
+            $resp['msg'] = '未登录！';
+            Gateway::sendToClient($client_id, json_encode($resp));
+        }else {//参数正确
+            $password = $request['password'];
+            $resetPass = UserDao::resetPassword($userId,$password);
+            $resp = array_merge($resp,$resetPass);
+
+            Gateway::sendToClient($client_id, json_encode($resp));
+        }
+    }
+
+    /**
+     * 重置用户名
+     * @param $client_id
+     * @param $request
+     */
+    public function actionResetName($client_id,$request){
+        $resp['id'] = $request['id'];
+        $resp['cmd'] = $request['cmd'];
+        $userId = Gateway::getUidByClientId($client_id);
+
+        ValidatorHelper::make($request, [
+            'name' => 'present'
+        ]);
+
+        if (ValidatorHelper::has_fails()) {//参数出错
+            echo ValidatorHelper::error_msg();
+            $resp['code'] = 200;
+            $resp['msg'] = ValidatorHelper::error_msg();
+            Gateway::sendToClient($client_id, json_encode($resp));
+        }elseif ($userId==null){
+            $resp['code'] = 201;
+            $resp['msg'] = '未登录！';
+            Gateway::sendToClient($client_id, json_encode($resp));
+        }else {//参数正确
+            $name = $request['name'];
+            $resetName=UserDao::resetName($userId,$name);
+            $resp = array_merge($resp,$resetName);
+
+            Gateway::sendToClient($client_id, json_encode($resp));
+        }
+    }
+
+    /**
+     * 搜索用户
+     * @param $client_id
+     * @param $request
+     */
+    public function actionSearchUser($client_id,$request){
+        $resp['id'] = $request['id'];
+        $resp['cmd'] = $request['cmd'];
+        $phone = $request["phone"];
+        $searchResult = UserDao::searchUser($phone);
+        $resp = array_merge($resp,$searchResult);
+        Gateway::sendToClient($client_id, json_encode($resp));
     }
 
     public function hello($client_id,$action){
