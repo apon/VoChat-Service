@@ -45,8 +45,8 @@ class UserController
         ]);
 
         if (ValidatorHelper::has_fails()) {//参数出错
-            echo ValidatorHelper::error_msg();
-            $resp['code'] = 200;
+//            echo ValidatorHelper::error_msg();
+            $resp['code'] = ActionType::CODE_PARAMETER_ERROR;
             $resp['msg'] = ValidatorHelper::error_msg();
             Gateway::sendToClient($client_id, json_encode($resp));
         } else {//参数正确
@@ -77,7 +77,7 @@ class UserController
 
         if (ValidatorHelper::has_fails()) {//参数出错
             echo ValidatorHelper::error_msg();
-            $resp['code'] = 200;
+            $resp['code'] = ActionType::CODE_PARAMETER_ERROR;
             $resp['msg'] = ValidatorHelper::error_msg();
             Gateway::sendToClient($client_id, json_encode($resp));
         } else {//参数正确
@@ -107,13 +107,13 @@ class UserController
 
         if (ValidatorHelper::has_fails()) {//参数出错
             echo ValidatorHelper::error_msg();
-            $resp['code'] = 200;
+            $resp['code'] = ActionType::CODE_PARAMETER_ERROR;
             $resp['msg'] = ValidatorHelper::error_msg();
             Gateway::sendToClient($client_id, json_encode($resp));
         } else {//参数正确
             $userId = $request['userid'];
             Gateway::bindUid($client_id,$userId);
-            $resp['code'] = 0;
+            $resp['code'] = ActionType::CODE_SUCCESS;
             $resp['msg'] = '绑定成功！';
             Gateway::sendToClient($client_id, json_encode($resp));
         }
@@ -136,11 +136,11 @@ class UserController
 
         if (ValidatorHelper::has_fails()) {//参数出错
             echo ValidatorHelper::error_msg();
-            $resp['code'] = 200;
+            $resp['code'] = ActionType::CODE_PARAMETER_ERROR;
             $resp['msg'] = ValidatorHelper::error_msg();
             Gateway::sendToClient($client_id, json_encode($resp));
         }elseif ($userId==null){
-            $resp['code'] = 201;
+            $resp['code'] = ActionType::CODE_NO_BIND;
             $resp['msg'] = '未登录！';
             Gateway::sendToClient($client_id, json_encode($resp));
         }else {//参数正确
@@ -168,11 +168,11 @@ class UserController
 
         if (ValidatorHelper::has_fails()) {//参数出错
             echo ValidatorHelper::error_msg();
-            $resp['code'] = 200;
+            $resp['code'] = ActionType::CODE_PARAMETER_ERROR;
             $resp['msg'] = ValidatorHelper::error_msg();
             Gateway::sendToClient($client_id, json_encode($resp));
         }elseif ($userId==null){
-            $resp['code'] = 201;
+            $resp['code'] = ActionType::CODE_NO_BIND;
             $resp['msg'] = '未登录！';
             Gateway::sendToClient($client_id, json_encode($resp));
         }else {//参数正确

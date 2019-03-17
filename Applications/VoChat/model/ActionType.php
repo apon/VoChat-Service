@@ -15,4 +15,11 @@ class ActionType
     const CMD_RESET_PASSWORD = 1003;//修改密码
     const CMD_RESET_NAME = 1004;//修改用户名
     const CMD_SEARCH_USER = 1005;//搜索用户
+
+
+
+    //code相关
+    const CODE_SUCCESS = 200;
+    const CODE_PARAMETER_ERROR = 201;
+    const CODE_NO_BIND = 202;
 }

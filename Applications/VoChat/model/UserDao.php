@@ -6,6 +6,7 @@
  * Time: 16:29
  */
 namespace VoChat\Model;
+require_once __DIR__.'/ActionType.php';
 class UserDao
 {
     public static function register($phone,$pass){
@@ -29,7 +30,7 @@ class UserDao
                 'phone'=>$phone,
                 'password'=>$pass))->query();
             $db->commitTrans();
-            $resp['code'] = 0;
+            $resp['code'] = ActionType::CODE_SUCCESS;
             $resp['msg'] = '注册成功!';
             $resp['data'] = $user;
         }
@@ -64,7 +65,7 @@ class UserDao
         }else{
             $respass = $db->select('password')->from('LocalAuth')->where("phone= $phone ")->row();
             if ($pass==$respass['password']){
-                $resp['code'] = 0;
+                $resp['code'] = ActionType::CODE_SUCCESS;
                 $resp['msg'] = '登录成功!';
                 $resp['data'] = $isRegister;
             }else{
@@ -88,7 +89,7 @@ class UserDao
             $resp['code'] = 1;
             $resp['msg'] = '设置失败或与密码相同!';
         }else{
-            $resp['code'] = 0;
+            $resp['code'] = ActionType::CODE_SUCCESS;
             $resp['msg'] = '成功重置密码!';
         }
         return $resp;
@@ -106,7 +107,7 @@ class UserDao
             $resp['code'] = 1;
             $resp['msg'] = '设置失败或与原名相同!';
         }else{
-            $resp['code'] = 0;
+            $resp['code'] = ActionType::CODE_SUCCESS;
             $resp['msg'] = '成功重置名称!';
         }
         return $resp;
@@ -120,7 +121,7 @@ class UserDao
         global $db;
         $phone = $phone."%";
         $searchResult = $db->select('*')->from('Users')->where("phone like '$phone' ")->limit(30)->query();
-        $resp['code'] = 0;
+        $resp['code'] = ActionType::CODE_SUCCESS;
         $resp['msg'] = '搜索完成!';
         $resp['data'] = $searchResult;
         return $resp;
