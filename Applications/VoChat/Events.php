@@ -121,9 +121,10 @@ class Events
 
         if (!$hasMethod){
 //            echo '无法处理CMD:'.$cmd;
-            $resp['code'] = -1;
-            $resp['msg'] = "无法处理该CMD($cmd)！";
-            Gateway::sendToClient($client_id, json_encode($resp));
+            $response['code'] = -1;
+            $response['msg'] = "无法处理该CMD($cmd)！";
+
+            Gateway::sendToClient($client_id, json_encode($response));
         }
     }
 
