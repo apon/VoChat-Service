@@ -35,10 +35,10 @@ class UserController
      * 登录
      * @param $client_id
      * @param $request
+     * @param $resp
      */
-    public function actionLogin($client_id,$request){
-        $resp['id'] = $request['id'];
-        $resp['cmd'] = $request['cmd'];
+    public function actionLogin($client_id,$request,$resp){
+
         ValidatorHelper::make($request, [
             'phone' => 'present|mobile',
             'password' => 'present'
@@ -66,10 +66,10 @@ class UserController
      * 注册
      * @param $client_id
      * @param $request
+     * @param $resp
      */
-    public function actionRegister($client_id,$request){
-        $resp['id'] = $request['id'];
-        $resp['cmd'] = $request['cmd'];
+    public function actionRegister($client_id,$request,$resp){
+
         ValidatorHelper::make($request, [
             'phone' => 'present|mobile',
             'password' => 'present'
@@ -96,11 +96,11 @@ class UserController
      * 绑定
      * @param $client_id
      * @param $request
+     * @param $resp
      */
-    public function actionBind($client_id,$request){
+    public function actionBind($client_id,$request,$resp){
 
-        $resp['id'] = $request['id'];
-        $resp['cmd'] = $request['cmd'];
+
         ValidatorHelper::make($request, [
             'userid' => 'present'
         ]);
@@ -124,10 +124,10 @@ class UserController
      * 重置密码
      * @param $client_id
      * @param $request
+     * @param $resp
      */
-    public function actionResetPassword($client_id,$request){
-        $resp['id'] = $request['id'];
-        $resp['cmd'] = $request['cmd'];
+    public function actionResetPassword($client_id,$request,$resp){
+
         $userId = Gateway::getUidByClientId($client_id);
 
         ValidatorHelper::make($request, [
@@ -156,10 +156,10 @@ class UserController
      * 重置用户名
      * @param $client_id
      * @param $request
+     * @param $resp
      */
-    public function actionResetName($client_id,$request){
-        $resp['id'] = $request['id'];
-        $resp['cmd'] = $request['cmd'];
+    public function actionResetName($client_id,$request,$resp){
+
         $userId = Gateway::getUidByClientId($client_id);
 
         ValidatorHelper::make($request, [
@@ -188,10 +188,10 @@ class UserController
      * 搜索用户
      * @param $client_id
      * @param $request
+     * @param $resp
      */
-    public function actionSearchUser($client_id,$request){
-        $resp['id'] = $request['id'];
-        $resp['cmd'] = $request['cmd'];
+    public function actionSearchUser($client_id,$request,$resp){
+
         $phone = $request["phone"];
         $searchResult = UserDao::searchUser($phone);
         $resp = array_merge($resp,$searchResult);

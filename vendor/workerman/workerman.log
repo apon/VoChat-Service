@@ -6353,3 +6353,4 @@ Stack trace:
 2019-03-15 18:37:20 pid:35878 Workerman[startdev.php] start in DEBUG mode
 2019-03-15 19:01:14 pid:35878 Workerman[startdev.php] stopping ...
 2019-03-15 19:01:14 pid:35878 Workerman[startdev.php] has been stopped
+2019-03-17 14:15:18 pid:58456 Workerman[startdev.php] start in DEBUG mode

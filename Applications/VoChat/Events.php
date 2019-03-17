@@ -105,19 +105,25 @@ class Events
     private static function callHook($cmd,$client_id,$request) {
         global $controllersArray;
         $hasMethod = false;
+        $response['id'] = $request['id'];
+        $response['cmd'] = $request['cmd'];
         foreach ($controllersArray as $controller)
         {
             $action = $controller->getAction($cmd);
-            echo $action;
+//            echo $action;
             if (method_exists($controller, $action)){
-                call_user_func_array(array($controller, $action), array($client_id,$request));
+
+                call_user_func_array(array($controller, $action), array($client_id,$request,$response));
                 $hasMethod = true;
                 break;
             }
         }
 
         if (!$hasMethod){
-            echo '无法处理CMD:'.$cmd;
+//            echo '无法处理CMD:'.$cmd;
+            $resp['code'] = -1;
+            $resp['msg'] = "无法处理该CMD($cmd)！";
+            Gateway::sendToClient($client_id, json_encode($resp));
         }
     }
 
