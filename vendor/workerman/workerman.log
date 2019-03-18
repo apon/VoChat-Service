@@ -6363,3 +6363,178 @@ Stack trace:
 2019-03-18 16:23:50 pid:62814 Workerman[startdev.php] stopping ...
 2019-03-18 16:23:50 pid:62814 Workerman[startdev.php] has been stopped
 2019-03-18 16:23:53 pid:85371 Workerman[startdev.php] start in DEBUG mode
+2019-03-18 21:08:43 pid:85371 Workerman[startdev.php] stopping ...
+2019-03-18 21:08:43 pid:85371 Workerman[startdev.php] has been stopped
+2019-03-18 21:08:45 pid:90223 Workerman[startdev.php] start in DEBUG mode
+2019-03-18 21:10:19 pid:90223 Workerman[startdev.php] stopping ...
+2019-03-18 21:10:19 pid:90223 Workerman[startdev.php] has been stopped
+2019-03-18 21:10:20 pid:90252 Workerman[startdev.php] start in DEBUG mode
+2019-03-18 21:18:25 pid:90252 Workerman[startdev.php] stopping ...
+2019-03-18 21:18:25 pid:90252 Workerman[startdev.php] has been stopped
+2019-03-18 21:18:26 pid:90362 Workerman[startdev.php] start in DEBUG mode
+2019-03-18 21:25:15 pid:90362 Workerman[startdev.php] stopping ...
+2019-03-18 21:25:15 pid:90362 Workerman[startdev.php] has been stopped
+2019-03-18 21:25:17 pid:90462 Workerman[startdev.php] start in DEBUG mode
+2019-03-18 21:25:17 pid:90463 PDOException: SQL:INSERT INTO `Users` ( `userid`,`friendid`) VALUES ( :userid,:friendid) SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userid' in 'field list' in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1772
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1830): Workerman\MySQL\Connection->execute('INSERT INTO `Us...', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/model/UserDao.php(163): Workerman\MySQL\Connection->query()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(47): VoChat\Model\UserDao::addContact('5', '10')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-18 21:25:18 pid:90463 Worker[90463] process terminated
+2019-03-18 21:25:18 pid:90462 worker[VoChatDevBusinessWorker:90463] exit with status 64000
+2019-03-18 21:25:18 pid:90466 PDOException: SQL:INSERT INTO `Users` ( `userid`,`friendid`) VALUES ( :userid,:friendid) SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userid' in 'field list' in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1772
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1830): Workerman\MySQL\Connection->execute('INSERT INTO `Us...', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/model/UserDao.php(163): Workerman\MySQL\Connection->query()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(47): VoChat\Model\UserDao::addContact('5', '10')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-18 21:25:19 pid:90466 Worker[90466] process terminated
+2019-03-18 21:25:19 pid:90462 worker[VoChatDevBusinessWorker:90466] exit with status 64000
+2019-03-18 21:25:19 pid:90467 PDOException: SQL:INSERT INTO `Users` ( `userid`,`friendid`) VALUES ( :userid,:friendid) SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userid' in 'field list' in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1772
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1830): Workerman\MySQL\Connection->execute('INSERT INTO `Us...', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/model/UserDao.php(163): Workerman\MySQL\Connection->query()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(47): VoChat\Model\UserDao::addContact('5', '10')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-18 21:25:20 pid:90467 Worker[90467] process terminated
+2019-03-18 21:25:20 pid:90462 Workerman[startdev.php] stopping ...
+2019-03-18 21:25:20 pid:90462 worker[VoChatDevBusinessWorker:90467] exit with status 64000
+2019-03-18 21:25:20 pid:90462 Workerman[startdev.php] has been stopped
+2019-03-18 21:26:01 pid:90480 Workerman[startdev.php] start in DEBUG mode
+2019-03-18 21:26:28 pid:90480 Workerman[startdev.php] stopping ...
+2019-03-18 21:26:28 pid:90480 Workerman[startdev.php] has been stopped
+2019-03-18 21:26:29 pid:90492 Workerman[startdev.php] start in DEBUG mode
+2019-03-18 21:28:26 pid:90492 Workerman[startdev.php] stopping ...
+2019-03-18 21:28:26 pid:90492 Workerman[startdev.php] has been stopped
+2019-03-18 21:28:28 pid:90524 Workerman[startdev.php] start in DEBUG mode
+2019-03-18 21:29:26 pid:90524 Workerman[startdev.php] stopping ...
+2019-03-18 21:29:26 pid:90524 Workerman[startdev.php] has been stopped
+2019-03-18 21:29:28 pid:90542 Workerman[startdev.php] start in DEBUG mode
+2019-03-18 21:30:01 pid:90542 Workerman[startdev.php] stopping ...
+2019-03-18 21:30:01 pid:90542 Workerman[startdev.php] has been stopped
+2019-03-18 21:30:03 pid:90556 Workerman[startdev.php] start in DEBUG mode
+2019-03-18 21:31:32 pid:90556 Workerman[startdev.php] stopping ...
+2019-03-18 21:31:32 pid:90556 Workerman[startdev.php] has been stopped
+2019-03-18 21:31:34 pid:90588 Workerman[startdev.php] start in DEBUG mode
+2019-03-18 21:32:25 pid:90588 Workerman[startdev.php] stopping ...
+2019-03-18 21:32:25 pid:90588 Workerman[startdev.php] has been stopped
+2019-03-18 21:32:26 pid:90607 Workerman[startdev.php] start in DEBUG mode
+2019-03-18 21:34:28 pid:90607 Workerman[startdev.php] stopping ...
+2019-03-18 21:34:28 pid:90607 Workerman[startdev.php] has been stopped
+2019-03-18 21:34:29 pid:90637 Workerman[startdev.php] start in DEBUG mode
+2019-03-18 21:34:44 pid:90637 Workerman[startdev.php] stopping ...
+2019-03-18 21:34:44 pid:90637 Workerman[startdev.php] has been stopped
+2019-03-18 21:34:45 pid:90646 Workerman[startdev.php] start in DEBUG mode
+2019-03-18 21:38:10 pid:90646 Workerman[startdev.php] stopping ...
+2019-03-18 21:38:10 pid:90646 Workerman[startdev.php] has been stopped
+2019-03-18 21:38:12 pid:90694 Workerman[startdev.php] start in DEBUG mode
+2019-03-18 21:38:12 pid:90695 PDOException: SQL:SELECT id,name,phone,avatar FROM `UserRelation` INNER JOIN `Users` ON `UserRelation`.`friendid` = `Users`.`id` WHERE userid = 5 SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in field list is ambiguous in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1772
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1830): Workerman\MySQL\Connection->execute('SELECT id,name,...', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/model/UserDao.php(183): Workerman\MySQL\Connection->query()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(48): VoChat\Model\UserDao::getContact('5')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-18 21:38:13 pid:90695 Worker[90695] process terminated
+2019-03-18 21:38:13 pid:90694 worker[VoChatDevBusinessWorker:90695] exit with status 64000
+2019-03-18 21:38:13 pid:90698 PDOException: SQL:SELECT id,name,phone,avatar FROM `UserRelation` INNER JOIN `Users` ON `UserRelation`.`friendid` = `Users`.`id` WHERE userid = 5 SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in field list is ambiguous in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1772
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1830): Workerman\MySQL\Connection->execute('SELECT id,name,...', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/model/UserDao.php(183): Workerman\MySQL\Connection->query()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(48): VoChat\Model\UserDao::getContact('5')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-18 21:38:14 pid:90698 Worker[90698] process terminated
+2019-03-18 21:38:14 pid:90694 worker[VoChatDevBusinessWorker:90698] exit with status 64000
+2019-03-18 21:38:14 pid:90699 PDOException: SQL:SELECT id,name,phone,avatar FROM `UserRelation` INNER JOIN `Users` ON `UserRelation`.`friendid` = `Users`.`id` WHERE userid = 5 SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in field list is ambiguous in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1772
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1830): Workerman\MySQL\Connection->execute('SELECT id,name,...', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/model/UserDao.php(183): Workerman\MySQL\Connection->query()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(48): VoChat\Model\UserDao::getContact('5')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-18 21:38:14 pid:90699 Worker[90699] process terminated
+2019-03-18 21:38:14 pid:90694 Workerman[startdev.php] stopping ...
+2019-03-18 21:38:14 pid:90694 worker[VoChatDevBusinessWorker:90699] exit with status 64000
+2019-03-18 21:38:14 pid:90694 Workerman[startdev.php] has been stopped
+2019-03-18 21:39:07 pid:90715 Workerman[startdev.php] start in DEBUG mode
+2019-03-18 21:43:09 pid:90715 Workerman[startdev.php] stopping ...
+2019-03-18 21:43:09 pid:90715 Workerman[startdev.php] has been stopped
+2019-03-18 21:43:12 pid:90775 Workerman[startdev.php] start in DEBUG mode
+2019-03-18 21:43:58 pid:90775 Workerman[startdev.php] stopping ...
+2019-03-18 21:43:58 pid:90775 Workerman[startdev.php] has been stopped
+2019-03-18 21:44:00 pid:90792 Workerman[startdev.php] start in DEBUG mode
+2019-03-18 22:06:15 pid:90792 Workerman[startdev.php] stopping ...
+2019-03-18 22:06:15 pid:90792 Workerman[startdev.php] has been stopped
+2019-03-18 22:06:17 pid:91103 Workerman[startdev.php] start in DEBUG mode
+2019-03-18 22:09:22 pid:91103 Workerman[startdev.php] stopping ...
+2019-03-18 22:09:22 pid:91103 Workerman[startdev.php] has been stopped
+2019-03-18 22:09:24 pid:91148 Workerman[startdev.php] start in DEBUG mode
+2019-03-18 22:09:26 pid:91148 Workerman[startdev.php] stopping ...
+2019-03-18 22:09:26 pid:91148 Workerman[startdev.php] has been stopped

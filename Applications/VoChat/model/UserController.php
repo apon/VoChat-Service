@@ -28,7 +28,9 @@ class UserController
         ActionType::CMD_BING => 'actionBind',
         ActionType::CMD_RESET_PASSWORD => 'actionResetPassword',
         ActionType::CMD_RESET_NAME => 'actionResetName',
-        ActionType::CMD_SEARCH_USER => 'actionSearchUser'
+        ActionType::CMD_SEARCH_USER => 'actionSearchUser',
+        ActionType::CMD_ADD_CONTACT => 'actionAddContact',
+        ActionType::CMD_GET_CONTACT => 'actionGetContact'
     );
 
     /**
@@ -208,6 +210,57 @@ class UserController
         $searchResult = UserDao::searchUser($phone);
         $resp = array_merge($resp,$searchResult);
         Gateway::sendToClient($client_id, json_encode($resp));
+    }
+
+    /**
+     * 添加联系人
+     * @param $client_id
+     * @param $request
+     * @param $resp
+     */
+    public function actionAddContact($client_id,$request,$resp){
+
+        $userId = Gateway::getUidByClientId($client_id);
+
+        ValidatorHelper::make($request, [
+            'friendid' => 'present'
+        ]);
+
+        if (ValidatorHelper::has_fails()) {//参数出错
+            echo ValidatorHelper::error_msg();
+            $resp['code'] = ActionType::CODE_PARAMETER_ERROR;
+            $resp['msg'] = ValidatorHelper::error_msg();
+            Gateway::sendToClient($client_id, json_encode($resp));
+        }elseif ($userId==null){
+            $resp['code'] = ActionType::CODE_NO_BIND;
+            $resp['msg'] = '未登录！';
+            Gateway::sendToClient($client_id, json_encode($resp));
+        }else {//参数正确
+            $friendid = $request['friendid'];
+            $data = UserDao::addContact($userId,$friendid);
+            $resp = array_merge($resp,$data);
+
+            Gateway::sendToClient($client_id, json_encode($resp));
+        }
+    }
+
+    /**
+     * 获取联系人列表
+     * @param $client_id
+     * @param $request
+     * @param $resp
+     */
+    public function actionGetContact($client_id,$request,$resp){
+        $userId = Gateway::getUidByClientId($client_id);
+        if ($userId==null){
+            $resp['code'] = ActionType::CODE_NO_BIND;
+            $resp['msg'] = '未登录！';
+            Gateway::sendToClient($client_id, json_encode($resp));
+        }else {
+            $data = UserDao::getContact($userId);
+            $resp = array_merge($resp,$data);
+            Gateway::sendToClient($client_id, json_encode($resp));
+        }
     }
 
     public function hello($client_id,$action){

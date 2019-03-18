@@ -44,7 +44,8 @@ class Events
 
 //        $resp = UserDao::login("18978403465","123456");
 //        echo json_encode($resp);
-//        $resp = UserDao::searchUser("189");
+//        $resp = UserDao::addContact("5","11");
+//        $resp = UserDao::getContact("5");
 //        echo json_encode($resp);
         //初始化控制器
         global $controllersArray;

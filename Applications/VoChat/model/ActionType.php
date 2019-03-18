@@ -15,6 +15,8 @@ class ActionType
     const CMD_RESET_PASSWORD = 1003;//修改密码
     const CMD_RESET_NAME = 1004;//修改用户名
     const CMD_SEARCH_USER = 1005;//搜索用户
+    const CMD_ADD_CONTACT = 1006;//添加联系人
+    const CMD_GET_CONTACT = 1007;//获取联系人列表
 
 
 

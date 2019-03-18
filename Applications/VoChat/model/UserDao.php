@@ -9,6 +9,12 @@ namespace VoChat\Model;
 require_once __DIR__.'/ActionType.php';
 class UserDao
 {
+    /**
+     * 用户注册
+     * @param $phone
+     * @param $pass
+     * @return mixed
+     */
     public static function register($phone,$pass){
         global $db;
         $isRegister = $db->select('*')->from('Users')->where("phone= $phone ")->row();
@@ -54,7 +60,12 @@ class UserDao
         return $str;
     }
 
-
+    /**
+     * 用户登录
+     * @param $phone
+     * @param $pass
+     * @return mixed
+     */
     public static function login($phone,$pass){
         global $db;
 
@@ -78,6 +89,7 @@ class UserDao
     }
 
     /**
+     * 重置密码
      * @param $userId
      * @param $pass
      * @return mixed
@@ -96,6 +108,7 @@ class UserDao
     }
 
     /**
+     * 重置用户名
      * @param $userId
      * @param $name
      * @return mixed
@@ -114,6 +127,7 @@ class UserDao
     }
 
     /**
+     * 搜索用户
      * @param $phone
      * @return mixed
      */
@@ -124,6 +138,53 @@ class UserDao
         $resp['code'] = ActionType::CODE_SUCCESS;
         $resp['msg'] = '搜索完成!';
         $resp['data'] = $searchResult;
+        return $resp;
+    }
+
+    /**
+     * 添加联系人
+     * @param $userId
+     * @param $friendId
+     * @return mixed
+     */
+    public static function addContact($userId,$friendId){
+        global $db;
+        $isUser = $db->select('*')->from('Users')->where("id= $friendId ")->row();
+        if (!$isUser){//用户不重置
+            $resp['code'] = 1;
+            $resp['msg'] = '用户不存在!';
+        }else{
+            $isAdd = $db->select('*')->from('UserRelation')->where("userid= $userId AND friendid= $friendId ")->row();
+            if (!$isAdd){//未以添加
+
+                $db->insert('UserRelation')->cols(array(
+                    'userid'=>$userId,
+                    'friendid'=>$friendId
+                ))->query();
+            }
+            $data = $db->select('Users.id,name,phone,avatar')->from('UserRelation')->innerJoin('Users','UserRelation.friendid = Users.id')
+                ->where("userid = $userId")->query();
+            $resp['code'] = ActionType::CODE_SUCCESS;
+            $resp['msg'] = '成功添加!';
+            $resp['data'] = $data;
+        }
+
+        return $resp;
+    }
+
+    /**
+     * 获取联系人列表
+     * @param $userId
+     * @return mixed
+     */
+    public static function getContact($userId){
+        global $db;
+        $data = $db->select('Users.id,name,phone,avatar')->from('UserRelation')->innerJoin('Users','UserRelation.friendid = Users.id')
+            ->where("userid = $userId")->query();
+
+        $resp['code'] = ActionType::CODE_SUCCESS;
+        $resp['msg'] = '成功获取联系人列表!';
+        $resp['data'] = $data;
         return $resp;
     }
 
