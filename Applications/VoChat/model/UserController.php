@@ -58,6 +58,12 @@ class UserController
             $resp = array_merge($resp,$loginResp);
 
             Gateway::sendToClient($client_id, json_encode($resp));
+
+            //如果登录成功则绑定用户
+            if($resp['code']==ActionType::CODE_SUCCESS){
+                $data  = $resp['data'];
+                Gateway::bindUid($client_id,$data['id']);
+            }
         }
 
     }
@@ -89,6 +95,12 @@ class UserController
             $resp = array_merge($resp,$registerResp);
 
             Gateway::sendToClient($client_id, json_encode($resp));
+
+            //如果注册成功则绑定用户
+            if($resp['code']==ActionType::CODE_SUCCESS){
+                $data  = $resp['data'];
+                Gateway::bindUid($client_id,$data['id']);
+            }
         }
     }
 
