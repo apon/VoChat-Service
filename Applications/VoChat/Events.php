@@ -20,13 +20,16 @@
 //declare(ticks=1);
 require_once __DIR__.'/model/ActionType.php';
 require_once __DIR__.'/model/UserController.php';
+require_once __DIR__.'/model/UserDao.php';
+require_once __DIR__.'/model/ChatMsgController.php';
+require_once __DIR__.'/model/ChatMsgDao.php';
 require_once __DIR__.'/mysql-master/src/Connection.php';
-require_once __DIR__ . '/model/UserDao.php';
 require_once __DIR__.'/php-validator/ValidatorHelper.php';
 
 
 use \GatewayWorker\Lib\Gateway;
 use \Vochat\Model\UserController;
+use \Vochat\Model\ChatMsgController;
 use \VoChat\Model\UserDao;
 use Yunhack\PHPValidator\ValidatorHelper;
 
@@ -50,8 +53,10 @@ class Events
         //初始化控制器
         global $controllersArray;
         $userController = new UserController();
+        $chatMsgController = new ChatMsgController();
         $controllersArray = array(
-            $userController
+            $userController,
+            $chatMsgController
         );
 
 //        $param = array(
