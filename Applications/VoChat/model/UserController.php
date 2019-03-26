@@ -25,12 +25,13 @@ class UserController
     public $actionMap = array(
         ActionType::CMD_LOGIN => 'actionLogin',
         ActionType::CMD_REGISTER => 'actionRegister',
-        ActionType::CMD_BING => 'actionBind',
+        ActionType::CMD_BIND => 'actionBind',
         ActionType::CMD_RESET_PASSWORD => 'actionResetPassword',
         ActionType::CMD_RESET_NAME => 'actionResetName',
         ActionType::CMD_SEARCH_USER => 'actionSearchUser',
         ActionType::CMD_ADD_CONTACT => 'actionAddContact',
-        ActionType::CMD_GET_CONTACT => 'actionGetContact'
+        ActionType::CMD_GET_CONTACT => 'actionGetContact',
+        ActionType::CMD_UNBIND => 'actionUnBind'
     );
 
     /**
@@ -65,6 +66,8 @@ class UserController
             if($resp['code']==ActionType::CODE_SUCCESS){
                 $data  = $resp['data'];
                 Gateway::bindUid($client_id,$data['id']);
+                //发送离线消息
+                $this->sendOfflineMessage($client_id);
             }
         }
 
@@ -102,6 +105,8 @@ class UserController
             if($resp['code']==ActionType::CODE_SUCCESS){
                 $data  = $resp['data'];
                 Gateway::bindUid($client_id,$data['id']);
+                //发送离线消息
+                $this->sendOfflineMessage($client_id);
             }
         }
     }
@@ -130,7 +135,25 @@ class UserController
             $resp['code'] = ActionType::CODE_SUCCESS;
             $resp['msg'] = '绑定成功！';
             Gateway::sendToClient($client_id, json_encode($resp));
+            //发送离线消息
+            $this->sendOfflineMessage($client_id);
         }
+
+    }
+
+    /**
+     * 解绑
+     * @param $client_id
+     * @param $request
+     * @param $resp
+     */
+    public function actionUnBind($client_id,$request,$resp){
+
+        $userId = Gateway::getUidByClientId($client_id);
+        Gateway::unbindUid($client_id,$userId);
+        $resp['code'] = ActionType::CODE_SUCCESS;
+        $resp['msg'] = '解绑成功！';
+        Gateway::sendToClient($client_id, json_encode($resp));
 
     }
 
@@ -266,6 +289,28 @@ class UserController
     public function hello($client_id,$action){
         echo $client_id.$action;
 //        Gateway::sendToClient($client_id, json_encode('hello'));
+    }
+
+    /**
+     * 用户绑定后，给用户发送离线消息
+     * @param $client_id
+     */
+    private function sendOfflineMessage($client_id){
+        $userId = Gateway::getUidByClientId($client_id);
+        $listMsg = ChatMsgDao::getOfflineMessage($userId);
+        if($listMsg){
+            $arrlength=count($listMsg);
+
+            for($x=0;$x<$arrlength;$x++)
+            {
+                $msg = $listMsg[$x];
+                $msg['code']= ActionType::CODE_SUCCESS;
+                $msg['msg']="发送成功";
+                $msg['cmd'] = ActionType::CMD_REC_MSG;
+                Gateway::sendToUid($userId,json_encode($msg));
+                ChatMsgDao::removeMessage($msg);
+            }
+        }
     }
 
 }

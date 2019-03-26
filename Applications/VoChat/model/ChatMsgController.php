@@ -25,6 +25,7 @@ class ChatMsgController
     );
 
     public function actionSendMsg($client_id,$request,$resp){
+        $userId = Gateway::getUidByClientId($client_id);
         ValidatorHelper::make($request, [
             'fromId' => 'present',
             'toId' => 'present',
@@ -43,12 +44,19 @@ class ChatMsgController
             $peerType = $request['peerType'];
             if ($peerType==ActionType::PEER_TYPE_GROUP){
 //                Gateway::sendToGroup($toId,$sendMsg);
-            }else{
-                $request['code']= ActionType::CODE_SUCCESS;
-                $request['msg']="发送成功";
-                $request['cmd'] = ActionType::CMD_REC_MSG;
-//                $sendMsg = array_merge($sendMsg,$resp);
-                Gateway::sendToUid($toId,json_encode($request));
+            }else if($peerType==ActionType::PEER_TYPE_C2C){
+
+                // 如果不在线就先存起来
+                if(!Gateway::isUidOnline($userId)){
+                    ChatMsgDao::storeMessage($request);
+                }else{// 在线就转发消息给对应的uid
+                    $request['code']= ActionType::CODE_SUCCESS;
+                    $request['msg']="发送成功";
+                    $request['cmd'] = ActionType::CMD_REC_MSG;
+                    Gateway::sendToUid($toId,json_encode($request));
+                }
+
+
 
             }
 
