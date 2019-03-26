@@ -10,12 +10,13 @@ require_once __DIR__.'/ActionType.php';
 class ChatMsgDao
 {
     /**
-     * 存储消息
+     * 存储离线消息
      * @param $message
+     * @return mixed
      */
     public static function storeMessage($message){
         global $db;
-        $db->insert('offlineMessage')->cols(array(
+        $res = $db->insert('offlineMessage')->cols(array(
             'id'=>$message['id'],
             'fromId'=>$message['fromId'],
             'fromName'=>$message['fromName'],
@@ -25,6 +26,7 @@ class ChatMsgDao
             'peerType'=>$message['peerType'],
             'content'=>$message['content']
         ))->query();
+        return $res;
     }
 
     /**

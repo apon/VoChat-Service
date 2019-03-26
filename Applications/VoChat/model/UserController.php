@@ -298,6 +298,7 @@ class UserController
     private function sendOfflineMessage($client_id){
         $userId = Gateway::getUidByClientId($client_id);
         $listMsg = ChatMsgDao::getOfflineMessage($userId);
+        echo "发送离线消息".$listMsg;
         if($listMsg){
             $arrlength=count($listMsg);
 

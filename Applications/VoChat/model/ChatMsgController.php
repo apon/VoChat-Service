@@ -48,12 +48,14 @@ class ChatMsgController
 
                 // 如果不在线就先存起来
                 if(!Gateway::isUidOnline($userId)){
-                    ChatMsgDao::storeMessage($request);
+                    $result = ChatMsgDao::storeMessage($request);
+                    echo "用户不在线存储消息：".$result;
                 }else{// 在线就转发消息给对应的uid
                     $request['code']= ActionType::CODE_SUCCESS;
                     $request['msg']="发送成功";
                     $request['cmd'] = ActionType::CMD_REC_MSG;
                     Gateway::sendToUid($toId,json_encode($request));
+                    echo "用户在线转发消息消息：";
                 }
 
 
