@@ -45,7 +45,7 @@ class ChatMsgDao
      */
     public static function getOfflineMessage($ownerId){
         global $db;
-        $listMsg = $db->select('*')->from('offlineMessage')->where("toId=$ownerId")->query();
+        $listMsg = $db->select('*')->from('offlineMessage')->where("toId= $ownerId")->query();
         return $listMsg;
     }
 }
