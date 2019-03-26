@@ -44,7 +44,7 @@ class UserController
 
         ValidatorHelper::make($request, [
             'phone' => 'present|mobile',
-            'password' => 'present'
+            'password' => 'present|length_between 6,12'
         ]);
 
         if (ValidatorHelper::has_fails()) {//参数出错
@@ -83,7 +83,7 @@ class UserController
 
         ValidatorHelper::make($request, [
             'phone' => 'present|mobile',
-            'password' => 'present'
+            'password' => 'present|length_between 6,12'
         ]);
 
         if (ValidatorHelper::has_fails()) {//参数出错
@@ -168,7 +168,7 @@ class UserController
         $userId = Gateway::getUidByClientId($client_id);
 
         ValidatorHelper::make($request, [
-            'password' => 'present'
+            'password' => 'present|length_between 6,12'
         ]);
 
         if (ValidatorHelper::has_fails()) {//参数出错
@@ -200,7 +200,7 @@ class UserController
         $userId = Gateway::getUidByClientId($client_id);
 
         ValidatorHelper::make($request, [
-            'name' => 'present'
+            'name' => 'present|length_between 6,16'
         ]);
 
         if (ValidatorHelper::has_fails()) {//参数出错
@@ -298,8 +298,6 @@ class UserController
     private function sendOfflineMessage($client_id){
         $userId = Gateway::getUidByClientId($client_id);
         $listMsg = ChatMsgDao::getOfflineMessage($userId);
-        echo "发送离线消息";
-        var_dump($listMsg);
         if($listMsg){
             $arrlength=count($listMsg);
 

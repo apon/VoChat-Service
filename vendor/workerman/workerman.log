@@ -6547,3 +6547,208 @@ Stack trace:
 2019-03-26 11:11:35 pid:13072 Workerman[startdev.php] start in DEBUG mode
 2019-03-26 11:11:45 pid:13072 Workerman[startdev.php] stopping ...
 2019-03-26 11:11:45 pid:13072 Workerman[startdev.php] has been stopped
+2019-03-26 11:58:19 pid:15997 Workerman[startdev.php] start in DEBUG mode
+2019-03-26 11:58:19 pid:15998 Exception: Illegal PHPValidator expression: The 'length_between' rule's value must like ' min , max ' in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/Validator.php:647
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/Validator.php(146): Yunhack\PHPValidator\Validator->check_length_between('phone', '189784034', '0:12')
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/ValidatorHelper.php(16): Yunhack\PHPValidator\Validator->check()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(66): Yunhack\PHPValidator\ValidatorHelper::make(Array, Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-26 11:58:20 pid:15998 Worker[15998] process terminated
+2019-03-26 11:58:20 pid:15997 worker[VoChatDevBusinessWorker:15998] exit with status 64000
+2019-03-26 11:58:20 pid:16001 Exception: Illegal PHPValidator expression: The 'length_between' rule's value must like ' min , max ' in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/Validator.php:647
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/Validator.php(146): Yunhack\PHPValidator\Validator->check_length_between('phone', '189784034', '0:12')
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/ValidatorHelper.php(16): Yunhack\PHPValidator\Validator->check()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(66): Yunhack\PHPValidator\ValidatorHelper::make(Array, Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-26 11:58:21 pid:16001 Worker[16001] process terminated
+2019-03-26 11:58:21 pid:15997 worker[VoChatDevBusinessWorker:16001] exit with status 64000
+2019-03-26 11:58:21 pid:16002 Exception: Illegal PHPValidator expression: The 'length_between' rule's value must like ' min , max ' in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/Validator.php:647
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/Validator.php(146): Yunhack\PHPValidator\Validator->check_length_between('phone', '189784034', '0:12')
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/ValidatorHelper.php(16): Yunhack\PHPValidator\Validator->check()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(66): Yunhack\PHPValidator\ValidatorHelper::make(Array, Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-26 11:58:22 pid:16002 Worker[16002] process terminated
+2019-03-26 11:58:22 pid:15997 worker[VoChatDevBusinessWorker:16002] exit with status 64000
+2019-03-26 11:58:22 pid:16004 Exception: Illegal PHPValidator expression: The 'length_between' rule's value must like ' min , max ' in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/Validator.php:647
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/Validator.php(146): Yunhack\PHPValidator\Validator->check_length_between('phone', '189784034', '0:12')
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/ValidatorHelper.php(16): Yunhack\PHPValidator\Validator->check()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(66): Yunhack\PHPValidator\ValidatorHelper::make(Array, Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-26 11:58:23 pid:16004 Worker[16004] process terminated
+2019-03-26 11:58:23 pid:15997 worker[VoChatDevBusinessWorker:16004] exit with status 64000
+2019-03-26 11:58:23 pid:16005 Exception: Illegal PHPValidator expression: The 'length_between' rule's value must like ' min , max ' in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/Validator.php:647
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/Validator.php(146): Yunhack\PHPValidator\Validator->check_length_between('phone', '189784034', '0:12')
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/ValidatorHelper.php(16): Yunhack\PHPValidator\Validator->check()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(66): Yunhack\PHPValidator\ValidatorHelper::make(Array, Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-26 11:58:24 pid:16005 Worker[16005] process terminated
+2019-03-26 11:58:24 pid:15997 worker[VoChatDevBusinessWorker:16005] exit with status 64000
+2019-03-26 11:58:24 pid:16006 Exception: Illegal PHPValidator expression: The 'length_between' rule's value must like ' min , max ' in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/Validator.php:647
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/Validator.php(146): Yunhack\PHPValidator\Validator->check_length_between('phone', '189784034', '0:12')
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/ValidatorHelper.php(16): Yunhack\PHPValidator\Validator->check()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(66): Yunhack\PHPValidator\ValidatorHelper::make(Array, Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-26 11:58:25 pid:16006 Worker[16006] process terminated
+2019-03-26 11:58:25 pid:15997 worker[VoChatDevBusinessWorker:16006] exit with status 64000
+2019-03-26 11:58:25 pid:16007 Exception: Illegal PHPValidator expression: The 'length_between' rule's value must like ' min , max ' in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/Validator.php:647
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/Validator.php(146): Yunhack\PHPValidator\Validator->check_length_between('phone', '189784034', '0:12')
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/ValidatorHelper.php(16): Yunhack\PHPValidator\Validator->check()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(66): Yunhack\PHPValidator\ValidatorHelper::make(Array, Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-26 11:58:26 pid:16007 Worker[16007] process terminated
+2019-03-26 11:58:26 pid:15997 worker[VoChatDevBusinessWorker:16007] exit with status 64000
+2019-03-26 11:58:26 pid:16009 Exception: Illegal PHPValidator expression: The 'length_between' rule's value must like ' min , max ' in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/Validator.php:647
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/Validator.php(146): Yunhack\PHPValidator\Validator->check_length_between('phone', '189784034', '0:12')
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/ValidatorHelper.php(16): Yunhack\PHPValidator\Validator->check()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(66): Yunhack\PHPValidator\ValidatorHelper::make(Array, Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-26 11:58:27 pid:16009 Worker[16009] process terminated
+2019-03-26 11:58:27 pid:15997 worker[VoChatDevBusinessWorker:16009] exit with status 64000
+2019-03-26 11:58:27 pid:16010 Exception: Illegal PHPValidator expression: The 'length_between' rule's value must like ' min , max ' in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/Validator.php:647
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/Validator.php(146): Yunhack\PHPValidator\Validator->check_length_between('phone', '189784034', '0:12')
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/php-validator/ValidatorHelper.php(16): Yunhack\PHPValidator\Validator->check()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(66): Yunhack\PHPValidator\ValidatorHelper::make(Array, Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-26 11:58:27 pid:16010 Worker[16010] process terminated
+2019-03-26 11:58:27 pid:15997 Workerman[startdev.php] stopping ...
+2019-03-26 11:58:27 pid:15997 worker[VoChatDevBusinessWorker:16010] exit with status 64000
+2019-03-26 11:58:27 pid:15997 Workerman[startdev.php] has been stopped
+2019-03-26 11:58:56 pid:16023 Workerman[startdev.php] start in DEBUG mode
+2019-03-26 11:59:22 pid:16023 Workerman[startdev.php] stopping ...
+2019-03-26 11:59:22 pid:16023 Workerman[startdev.php] has been stopped
+2019-03-26 11:59:24 pid:16036 Workerman[startdev.php] start in DEBUG mode
+2019-03-26 11:59:38 pid:16036 Workerman[startdev.php] stopping ...
+2019-03-26 11:59:38 pid:16036 Workerman[startdev.php] has been stopped
+2019-03-26 11:59:39 pid:16047 Workerman[startdev.php] start in DEBUG mode
+2019-03-26 12:00:21 pid:16047 Workerman[startdev.php] stopping ...
+2019-03-26 12:00:21 pid:16047 Workerman[startdev.php] has been stopped
+2019-03-26 12:00:23 pid:16064 Workerman[startdev.php] start in DEBUG mode
+2019-03-26 12:00:38 pid:16064 Workerman[startdev.php] stopping ...
+2019-03-26 12:00:38 pid:16064 Workerman[startdev.php] has been stopped
+2019-03-26 12:00:39 pid:16072 Workerman[startdev.php] start in DEBUG mode
+2019-03-26 12:00:52 pid:16072 Workerman[startdev.php] stopping ...
+2019-03-26 12:00:52 pid:16072 Workerman[startdev.php] has been stopped
+2019-03-26 12:00:53 pid:16082 Workerman[startdev.php] start in DEBUG mode
+2019-03-26 12:01:06 pid:16082 Workerman[startdev.php] stopping ...
+2019-03-26 12:01:06 pid:16082 Workerman[startdev.php] has been stopped
+2019-03-26 12:01:08 pid:16090 Workerman[startdev.php] start in DEBUG mode
+2019-03-26 12:11:32 pid:16090 Workerman[startdev.php] stopping ...
+2019-03-26 12:11:32 pid:16090 Workerman[startdev.php] has been stopped
+2019-03-26 12:11:34 pid:16227 Workerman[startdev.php] start in DEBUG mode
+2019-03-26 12:11:39 pid:16227 Workerman[startdev.php] stopping ...
+2019-03-26 12:11:39 pid:16227 Workerman[startdev.php] has been stopped
