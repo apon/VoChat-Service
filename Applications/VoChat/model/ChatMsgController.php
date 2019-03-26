@@ -47,7 +47,7 @@ class ChatMsgController
             }else if($peerType==ActionType::PEER_TYPE_C2C){
 
                 // 如果不在线就先存起来
-                if(!Gateway::isUidOnline($userId)){
+                if(!Gateway::isUidOnline($toId)){
                     $result = ChatMsgDao::storeMessage($request);
                     echo "用户不在线存储消息：".$result;
                 }else{// 在线就转发消息给对应的uid
