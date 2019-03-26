@@ -87,7 +87,7 @@ class UserController
         ]);
 
         if (ValidatorHelper::has_fails()) {//参数出错
-            echo ValidatorHelper::error_msg();
+//            echo ValidatorHelper::error_msg();
             $resp['code'] = ActionType::CODE_PARAMETER_ERROR;
             $resp['msg'] = ValidatorHelper::error_msg();
             Gateway::sendToClient($client_id, json_encode($resp));

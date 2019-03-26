@@ -6752,3 +6752,133 @@ Stack trace:
 2019-03-26 12:11:34 pid:16227 Workerman[startdev.php] start in DEBUG mode
 2019-03-26 12:11:39 pid:16227 Workerman[startdev.php] stopping ...
 2019-03-26 12:11:39 pid:16227 Workerman[startdev.php] has been stopped
+2019-03-26 12:26:37 pid:17560 Workerman[startdev.php] start in DEBUG mode
+2019-03-26 12:27:33 pid:17560 Workerman[startdev.php] stopping ...
+2019-03-26 12:27:33 pid:17560 Workerman[startdev.php] has been stopped
+2019-03-26 12:27:34 pid:17631 Workerman[startdev.php] start in DEBUG mode
+2019-03-26 15:13:57 pid:17631 Workerman[startdev.php] stopping ...
+2019-03-26 15:13:57 pid:17631 Workerman[startdev.php] has been stopped
+2019-03-26 21:33:53 pid:27840 Workerman[startdev.php] start in DEBUG mode
+2019-03-26 21:34:59 pid:27840 Workerman[startdev.php] stopping ...
+2019-03-26 21:34:59 pid:27840 Workerman[startdev.php] has been stopped
+2019-03-26 21:35:02 pid:27859 Workerman[startdev.php] start in DEBUG mode
+2019-03-26 21:35:02 pid:27860 PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'116.21.132.75' (using password: YES) in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(46): Workerman\MySQL\Connection->__construct('120.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#13 {main}
+2019-03-26 21:35:03 pid:27860 Worker[27860] process terminated
+2019-03-26 21:35:03 pid:27859 worker[VoChatDevBusinessWorker:27860] exit with status 64000
+2019-03-26 21:35:03 pid:27864 PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'116.21.132.75' (using password: YES) in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(46): Workerman\MySQL\Connection->__construct('120.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-26 21:35:04 pid:27864 Worker[27864] process terminated
+2019-03-26 21:35:04 pid:27859 worker[VoChatDevBusinessWorker:27864] exit with status 64000
+2019-03-26 21:35:04 pid:27865 PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'116.21.132.75' (using password: YES) in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(46): Workerman\MySQL\Connection->__construct('120.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-26 21:35:05 pid:27865 Worker[27865] process terminated
+2019-03-26 21:35:05 pid:27859 worker[VoChatDevBusinessWorker:27865] exit with status 64000
+2019-03-26 21:35:05 pid:27866 PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'116.21.132.75' (using password: YES) in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(46): Workerman\MySQL\Connection->__construct('120.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-26 21:35:06 pid:27866 Worker[27866] process terminated
+2019-03-26 21:35:06 pid:27859 worker[VoChatDevBusinessWorker:27866] exit with status 64000
+2019-03-26 21:35:06 pid:27867 PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'116.21.132.75' (using password: YES) in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(46): Workerman\MySQL\Connection->__construct('120.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-26 21:35:07 pid:27867 Worker[27867] process terminated
+2019-03-26 21:35:07 pid:27859 worker[VoChatDevBusinessWorker:27867] exit with status 64000
+2019-03-26 21:35:07 pid:27868 PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'116.21.132.75' (using password: YES) in /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php:1711
+Stack trace:
+#0 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1711): PDO->__construct('mysql:dbname=vo...', 'root', 'yaopeng', Array)
+#1 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/mysql-master/src/Connection.php(1698): Workerman\MySQL\Connection->connect()
+#2 /Users/yaopeng/studyworkerman/VoChat/Applications/VoChat/Events.php(46): Workerman\MySQL\Connection->__construct('120.78.175.94', '3306', 'root', 'yaopeng', 'vochat')
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 [internal function]: GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(GatewayWorker\BusinessWorker))
+#7 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#8 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1452): GatewayWorker\BusinessWorker->run()
+#9 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#10 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#11 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#12 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#13 /Users/yaopeng/studyworkerman/VoChat/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#14 /Users/yaopeng/studyworkerman/VoChat/startdev.php(37): Workerman\Worker::runAll()
+#15 {main}
+2019-03-26 21:35:07 pid:27868 Worker[27868] process terminated
+2019-03-26 21:35:07 pid:27859 Workerman[startdev.php] stopping ...
+2019-03-26 21:35:07 pid:27859 worker[VoChatDevBusinessWorker:27868] exit with status 64000
+2019-03-26 21:35:07 pid:27859 Workerman[startdev.php] has been stopped
