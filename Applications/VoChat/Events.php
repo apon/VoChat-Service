@@ -41,15 +41,10 @@ use Yunhack\PHPValidator\ValidatorHelper;
 class Events
 {
     public static function onWorkerStart($worker){
-        //初始化数据库
+        //连接数据库 把ip,port,user,password换成真实的
         global $db;
-        $db = new \Workerman\MySQL\Connection('120.78.175.94', '3306', 'root', 'yaopeng', 'vochat');
+        $db = new \Workerman\MySQL\Connection('ip', 'port', 'user', 'password', 'vochat');
 
-//        $resp = UserDao::login("18978403465","123456");
-//        echo json_encode($resp);
-//        $resp = UserDao::addContact("5","11");
-//        $resp = UserDao::getContact("5");
-//        echo json_encode($resp);
         //初始化控制器
         global $controllersArray;
         $userController = new UserController();
@@ -58,21 +53,6 @@ class Events
             $userController,
             $chatMsgController
         );
-
-//        $param = array(
-//            'phone'=>'18978403462'
-//        );
-//        ValidatorHelper::make($param, [
-//            'phone' => 'present|mobile',
-//            'money' => 'present',
-//            'time' => 'date_format:Y-m-d',
-//        ]);
-//
-//        if (ValidatorHelper::has_fails()) {
-//            echo ValidatorHelper::error_msg();
-//        } else {
-//            echo "参数正确！";
-//        }
 
     }
 
